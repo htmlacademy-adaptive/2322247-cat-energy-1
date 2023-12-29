@@ -35,13 +35,13 @@
     </nav>
   </header>
   <main class="form-container">
-    <form class="form-container__questionnaire questionnaire"  action="https://echo.htmlacademy.ru/" method="get">
+    <form class="form-container__questionnaire questionnaire" action="https://echo.htmlacademy.ru/" method="get">
       <h1 class="form-container__header">Подбор программы</h1>
       <p class="questionnaire__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <fieldset class="questionnaire__info info">
+      <fieldset class="questionnaire__info info-cat">
         <legend class="visually-hidden">Информация о коте</legend>
-        <ul class="info__list">
+        <ul class="info-cat__list info">
           <li class="info__item">
             <label class="info__label" for="name" required>Имя:<sup>*</sup></label>
             <input class="info__input info__input--name" id="name" placeholder="Барсик" type="text">
@@ -56,32 +56,32 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="questionnaire__target target">
+      <fieldset class="questionnaire__target target-program">
         <legend class="visually-hidden">Выбор цели</legend>
-        <ul class="target__list">
+        <ul class="target-program__list target">
           <li class="target__item">
             <span class="target__mark"></span>
-            <input class="visually-hidden" type="radio" name="weight_loss"> <span
-              class="target__text">Похудение</span>
+            <input class="visually-hidden" type="radio" name="weight_loss"> <span class="target__text">Похудение</span>
           </li>
           <li class="target__item">
             <span class="target__mark"></span>
-            <input class="visually-hidden" type="radio" name="weight_gain"> <span
-              class="target__text">Набор массы</span>
+            <input class="visually-hidden" type="radio" name="weight_gain"> <span class="target__text">Набор
+              массы</span>
           </li>
           <li class="target__item">
             <span class="target__mark"></span>
-            <input class="visually-hidden" type="radio" name="need_help"> <span
-              class="target__text">Не знаю (нужен ваш совет)</span>
+            <input class="visually-hidden" type="radio" name="need_help"> <span class="target__text">Не знаю (нужен ваш
+              совет)</span>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="questionnaire__contact contact">
-        <legend class="contact__legend">Контактные данные (владельца кота)</legend>
-        <ul class="contact__list">
+      <fieldset class="questionnaire__contact contact-owner">
+        <legend class="contact-owner__legend">Контактные данные (владельца кота)</legend>
+        <ul class="contact-owner__list contact">
           <li class="contact__item">
             <label class="contact__label" for="email" required>E-mail:<sup>*</sup></label>
-            <input class="contact__input contact__input--email" id="email" placeholder="Kuklachev@gmail.ru" type="email">
+            <input class="contact__input contact__input--email" id="email" placeholder="Kuklachev@gmail.ru"
+              type="email">
           </li>
           <li class="contact__item">
             <label class="contact__label" for="phone" required>Телефон:<sup>*</sup></label>
@@ -93,24 +93,24 @@
         <legend class="comment__legend">Комментарий</legend>
         <input class="comment__input" placeholder="Расскажите обо всех повадках кота" type="text">
       </fieldset>
-      <fieldset class="questionnaire__additionally additionally">
-        <legend class="additionally_legend">Дополнительно</legend>
-        <ul class="additionally__list">
-          <li class="additionally_item">
+      <fieldset class="questionnaire__additionally other-part">
+        <legend class="other-part__legend">Дополнительно</legend>
+        <ul class="other-part__list additionally">
+          <li class="additionally__item">
             <span class="additionally__mark"></span>
             <input class="visually-hidden" type="checkbox" name="sugar"> <span
               class="additionally__text">Сахарозаменитель</span>
           </li>
-          <li class="additionally_item">
+          <li class="additionally__item">
             <span class="additionally__mark"></span>
             <input class="visually-hidden" type="checkbox" name="milk"> <span class="additionally__text">Молоко</span>
           </li>
-          <li class="additionally_item">
+          <li class="additionally__item">
             <span class="additionally__mark"></span>
             <input class="visually-hidden" type="checkbox" name="water"> <span class="additionally__text">Питьевая
               вода</span>
           </li>
-          <li class="additionally_item">
+          <li class="additionally__item">
             <span class="additionally__mark"></span>
             <input class="visually-hidden" type="checkbox" name="vitamins"> <span
               class="additionally__text">Витамины</span>
@@ -154,5 +154,4 @@
     </section>
   </footer>
 </body>
-
 </html>

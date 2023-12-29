@@ -35,13 +35,14 @@
     </nav>
   </header>
   <main class="catalog">
-    <h1 class="catalog_header">Каталог продукции</h1>
-    <ul class="catalog__list">
-      <li class="catalog_item product">
+    <h1 class="catalog__header">Каталог продукции</h1>
+    <h2 class="visually-hidden">Каталог флагманских продуктов</h2>
+    <ul class="catalog__list product-catalog">
+      <li class="product-catalog__item product">
         <img class="product__image product__image--chicken-litle" src="img/chicken_little.png"
           alt="маленькая упаковка со вкусом курицы">
         <div class="product__description description">
-          <h2 class="description__title">Cat Energy PRO<br>500 г</h2>
+          <h3 class="description__title">Cat Energy PRO<br>500 г</h3>
           <table class="description__info description__info--chicken-litle">
             <tbody>
               <tr>
@@ -60,11 +61,11 @@
           </table>
         </div>
       </li>
-      <li class="catalog_item product">
+      <li class="product-catalog__item product">
         <img class="product__image product__image--chicken-big" src="img/chicken_big.png"
           alt="Большая упаковка со вкусом курицы">
         <div class="product__description description">
-          <h2 class="description__title">Cat Energy PRO<br>1000 г</h2>
+          <h3 class="description__title">Cat Energy PRO<br>1000 г</h3>
           <table class="description__info description__info--chicken-big">
             <tbody>
               <tr>
@@ -83,11 +84,11 @@
           </table>
         </div>
       </li>
-      <li class="catalog_item product">
+      <li class="product-catalog__item product">
         <img class="product__image product__image--fish-little" src="img/fish_little.png"
           alt="Маленькая упаковка со вкусом рыбы">
         <div class="product__description description">
-          <h2 class="description__title">Cat Energy PRO<br>500 г</h2>
+          <h3 class="description__title">Cat Energy PRO<br>500 г</h3>
           <table class="description__info description__info--fish-little">
             <tbody>
               <tr>
@@ -106,11 +107,11 @@
           </table>
         </div>
       </li>
-      <li class="catalog_item product">
+      <li class="product-catalog__item product">
         <img class="product__image product__image--fish-big" src="img/fish_little.png"
           alt="Большая упаковка со вкусом рыбы">
         <div class="product__description description">
-          <h2 class="description__title">Cat Energy PRO<br>1000 г</h2>
+          <h3 class="description__title">Cat Energy PRO<br>1000 г</h3>
           <table class="description__info description__info--fish-big">
             <tbody>
               <tr>
@@ -129,11 +130,11 @@
           </table>
         </div>
       </li>
-      <li class="catalog_item product">
+      <li class="product-catalog__item product">
         <img class="product__image product__image--buckwheat-little" src="img/buckwheat_little.png"
           alt="Маленькая упаковка со вкусом гречки">
         <div class="product__description description">
-          <h2 class="description__title">Cat Energy slim<br>500 г</h2>
+          <h3 class="description__title">Cat Energy slim<br>500 г</h3>
           <table class="description__info description__info--buckwheat-little">
             <tbody>
               <tr>
@@ -152,11 +153,11 @@
           </table>
         </div>
       </li>
-      <li class="catalog_item product">
+      <li class="product-catalog__item product">
         <img class="product__image product__image--buckwheat-big" src="img/buckwheat_big.png"
           alt="Большая упаковка со вкусом гречки">
         <div class="product__description description">
-          <h2 class="description__title">Cat Energy slim<br>1000 г</h2>
+          <h3 class="description__title">Cat Energy slim<br>1000 г</h3>
           <table class="description__info description__info--buckwheat-big">
             <tbody>
               <tr>
@@ -175,11 +176,11 @@
           </table>
         </div>
       </li>
-      <li class="catalog_item product">
+      <li class="product-catalog__item product">
         <img class="product__image product__image--rice-little" src="img/rice_little.png"
           alt="Маленькая упаковка со вкусом риса">
         <div class="product__description description">
-          <h2 class="description__title">Cat Energy slim<br>500 г</h2>
+          <h3 class="description__title">Cat Energy slim<br>500 г</h3>
           <table class="description__info description__info--rice-little">
             <tbody>
               <tr>
@@ -198,15 +199,15 @@
           </table>
         </div>
       </li>
-      <li class="catalog_item product show-all">
+      <li class="product-catalog__item product show-all">
         <p class="show-all__title">Показать еще 100500 товаров</p>
         <p class="show-all__slogan">На самом деле вкусов гораздо больше!</p>
         <a class="show-all__catalog" href="#"></a>
       </li>
     </ul>
-    <section class="catalog__additional-product additional-product">
-      <h2 class="additional-product__title">Дополнительные товары</h2>
-      <ul class="additional-product__list">
+    <section class="catalog__other-product other-product">
+      <h2 class="other-product__title">Дополнительные товары</h2>
+      <ul class="other-product__list additional-product">
         <li class="additional-product__item">
           <p class="additional-product__name">Сахарозаменитель</p>
           <p class="additional-product__quantity">1 упаковка (100 г)</p>
@@ -248,15 +249,15 @@
         <img src="img/logo_footer.svg" width="174" height="50" alt="Cat energy">
       </a>
       <div class="contacts-footer___social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+        <ul class="social__list socials">
+          <li class="socials__item">
+            <a class="socials__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          <li class="socials__item">
+            <a class="socials__link social__link--youtube" href="#">Мы в Ютубе</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">Мы в Телеграме</a>
+          <li class="socials__item">
+            <a class="socials__link social__link--telegram" href="#">Мы в Телеграме</a>
           </li>
         </ul>
       </div>
