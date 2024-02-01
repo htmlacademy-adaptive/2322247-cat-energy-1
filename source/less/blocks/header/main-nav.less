@@ -1,13 +1,30 @@
 .main-nav__toggle {
   border: none;
-  width: 24px;
   height: 24px;
   background-image: url("../img/header_menu.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   margin-left: 65px;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 .menu-open {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .menu-open {
+    display: flex;
+  }
+
+  .main-nav {
+    position: relative;
+    z-index: 3;
+  }
 }

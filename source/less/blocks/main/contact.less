@@ -3,22 +3,70 @@
   padding-top: 14px;
   padding-bottom: 13px;
   border: 1px solid #e7e7e7;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
 
   &::placeholder {
     text-transform: uppercase;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+  }
+}
+
+.contact__label {
+  &--email {
+    min-width: 50px;
+  }
+
+  &--phone {
+    min-width: 67px;
   }
 }
 
 .contact__item {
-  &--email {
-    padding-top: 35px;
+  display: flex;
+}
+
+.contact__item:not(:last-child) {
+  padding-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact__item:not(:last-child) {
+    padding-bottom: 20px;
   }
 
-  &--phone {
-    padding-top: 14px;
+  .contact__label {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--email {
+      min-width: 63px;
+    }
+
+    &--phone {
+      min-width: 85px;
+    }
+  }
+
+  .contact__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact__item {
+    width: 100%;
+    padding: 0;
+
+    &--email {
+      margin-right: 80px;
+    }
+  }
+
+  .contact__item:not(:last-child) {
+    padding: 0;
   }
 }

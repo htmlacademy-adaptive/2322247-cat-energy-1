@@ -17,3 +17,36 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .work-principle__wrapper {
+    width: 708px;
+  }
+
+  .work-principle__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+    margin-bottom: 32px;
+  }
+
+  .work-principle__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .work-principle__wrapper {
+    width: 1220px;
+  }
+
+  .work-principle__title {
+    margin-top: 71px;
+  }
+
+  .work-principle__list {
+    justify-content: space-between;
+    margin-bottom: 69px;
+  }
+}

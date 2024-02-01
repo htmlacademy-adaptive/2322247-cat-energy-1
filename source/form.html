@@ -5,86 +5,97 @@
   <meta charset="UTF-8">
   <title>Cat energy</title>
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo main-header__logo--img" href="#"><span class="visually-hidden">Cat energy</span></a>
-    <a class="main-header__logo main-header__logo--name" href="#"><span class="visually-hidden">Cat energy</span></a>
-    <nav class="main-header__nav main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper menu-open">
-        <ul class="main-nav__list">
-          <li class="site-list__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item  site-list">
-            <a href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
+    <div class="main-header__container">
+      <div class="main-header__logo-container">
+        <a class="main-header__logo main-header__logo--img" href="#"><span class="visually-hidden">Cat energy</span></a>
+        <a class="main-header__logo main-header__logo--name" href="#"><span class="visually-hidden">Cat
+            energy</span></a>
       </div>
-    </nav>
+      <nav class="main-header__nav main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper menu-open">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__page" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__page" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__page" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="form-container">
     <form class="form-container__questionnaire questionnaire" action="https://echo.htmlacademy.ru/" method="get">
       <h1 class="form-container__header">Подбор программы</h1>
       <p class="questionnaire__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <fieldset class="questionnaire__form info-cat">
-        <legend class="questionnaire__legend visually-hidden">Информация о коте</legend>
-        <ul class="info-cat__list info">
-          <li class="info__item info__item--name">
-            <label class="info__label" for="name" required>Имя:<sup>*</sup></label>
-            <input class="info__input info__input--name" id="name" placeholder="Барсик" type="text">
-          </li>
-          <li class="info__item info__item--weight">
-            <label class="info__label" for="weight" required>Вес(кг):<sup>*</sup></label>
-            <input class="info__input info__input--weight" id="weight" placeholder="7" type="number">
-          </li>
-          <li class="info__item info__item--age">
-            <label class="info__label" for="age" required>Возраст(лет):<sup>*</sup></label>
-            <input class="info__input info__input--age" id="age" placeholder="7" type="number">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="questionnaire__form target-program">
-        <legend class="questionnaire__legend visually-hidden">Выбор цели</legend>
-        <ul class="target-program__list target">
-          <li class="target__item">
-            <span class="target__mark"></span>
-            <input class="visually-hidden" type="radio" name="weight_loss"> <span class="target__text">Похудение</span>
-          </li>
-          <li class="target__item">
-            <span class="target__mark"></span>
-            <input class="visually-hidden" type="radio" name="weight_gain"> <span class="target__text">Набор
-              массы</span>
-          </li>
-          <li class="target__item">
-            <span class="target__mark"></span>
-            <input class="visually-hidden" type="radio" name="need_help"> <span class="target__text">Не знаю (нужен ваш
-              совет)</span>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form-container__container">
+        <fieldset class="questionnaire__form info-cat">
+          <legend class="questionnaire__legend visually-hidden">Информация о коте</legend>
+          <ul class="info-cat__list info">
+            <li class="info__item info__item--name">
+              <label class="info__label" for="name" required>Имя:<sup>*</sup></label>
+              <input class="info__input info__input--name" id="name" placeholder="Барсик" type="text">
+            </li>
+            <li class="info__item info__item--weight">
+              <label class="info__label" for="weight" required>Вес(кг):<sup>*</sup></label>
+              <input class="info__input info__input--weight" id="weight" placeholder="7" type="number">
+            </li>
+            <li class="info__item info__item--age">
+              <label class="info__label" for="age" required>Возраст(лет):<sup>*</sup></label>
+              <input class="info__input info__input--age" id="age" placeholder="7" type="number">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="questionnaire__form target-program">
+          <legend class="questionnaire__legend visually-hidden">Выбор цели</legend>
+          <ul class="target-program__list target">
+            <li class="target__item">
+              <span class="target__mark"></span>
+              <input class="visually-hidden" type="radio" name="weight_loss"> <span
+                class="target__text">Похудение</span>
+            </li>
+            <li class="target__item">
+              <span class="target__mark"></span>
+              <input class="visually-hidden" type="radio" name="weight_gain"> <span class="target__text">Набор
+                массы</span>
+            </li>
+            <li class="target__item">
+              <span class="target__mark"></span>
+              <input class="visually-hidden" type="radio" name="need_help"> <span class="target__text">Не знаю (нужен
+                ваш
+                совет)</span>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="questionnaire__form contact-owner">
-        <legend class="questionnaire__legend questionnaire__legend--contact-owner">Контактные данные (владельца кота)</legend>
+        <legend class="questionnaire__legend questionnaire__legend--contact-owner">Контактные данные (владельца кота)
+        </legend>
         <ul class="contact-owner__list contact">
           <li class="contact__item contact__item--email">
-            <label class="contact__label" for="email" required>E-mail:<sup>*</sup></label>
+            <label class="contact__label contact__label--email" for="email" required>E-mail:<sup>*</sup></label>
             <input class="contact__input contact__input--email" id="email" placeholder="Kuklachev@gmail.ru"
               type="email">
           </li>
           <li class="contact__item contact__item--phone">
-            <label class="contact__label" for="phone" required>Телефон:<sup>*</sup></label>
+            <label class="contact__label contact__label--phone" for="phone" required>Телефон:<sup>*</sup></label>
             <input class="contact__input contact__input--phone" id="phone" placeholder="8(960)900-60-90" type="tel">
           </li>
         </ul>
@@ -117,16 +128,20 @@
           </li>
         </ul>
       </fieldset>
-      <button class="questionnaire__button" type="submit">Отправить заявку</button>
-      <small class="questionnaire__small-legend">
-        * — Обязательные поля
-      </small>
+      <div class="questionnaire__container">
+        <button class="questionnaire__button" type="submit">Отправить заявку</button>
+        <small class="questionnaire__small-legend">
+          * — Обязательные поля
+        </small>
+      </div>
     </form>
   </main>
   <footer class="main-footer">
     <section class="main-footer__cooperation cooperation">
-      <p class="cooperation__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
-      <address class="cooperation__adress">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+      <div class="cooperation__container">
+        <p class="cooperation__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
+        <address class="cooperation__adress">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+      </div>
       <img class="cooperation__location" src="./img/location.jpg" width="320" height="362" alt="место на карте">
     </section>
     <section class="main-footer__contacts contacts-footer">
@@ -136,21 +151,25 @@
       <div class="contacts-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в
+                Вконтакте</span></a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в Ютубе</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Мы в Телеграме</span> </a>
+            <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Мы в Телеграме</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="contacts-footer__copyright copyright">
         <a class="copyright__text" href="https://htmlacademy.ru">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип HTML Academy</span></a>
+        <a class="copyright__logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип HTML
+            Academy</span></a>
       </div>
     </section>
   </footer>
 </body>
+
 </html>

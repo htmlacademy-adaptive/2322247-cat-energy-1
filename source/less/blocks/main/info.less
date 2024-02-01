@@ -1,7 +1,9 @@
+.info {
+  padding-top: 39px;
+}
+
 .info__item {
-  &--name {
-    padding-top: 39px;
-  }
+  display: flex;
 
   &--weight {
     padding-top: 14px;
@@ -17,12 +19,37 @@
   padding-top: 14px;
   padding-bottom: 13px;
   border: 1px solid #e7e7e7;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
 
   &::placeholder {
     text-transform: uppercase;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .info {
+    padding-top: 66px;
+  }
+
+  .info__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .info__input {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .info {
+    padding-top: 66px;
   }
 }

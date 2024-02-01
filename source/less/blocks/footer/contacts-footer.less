@@ -1,5 +1,7 @@
 .contacts-footer {
   background-color: #f2f2f2;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contacts-footer__logo {
@@ -7,9 +9,29 @@
   padding: 40px 96px 20px 96px;
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 128px;
 }
 
 .contacts-footer__copyright {
   padding: 20px 20px 40px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-footer__logo {
+    padding: 0;
+  }
+
+  .contacts-footer__copyright {
+    padding: 0;
+  }
+
+  .contacts-footer {
+    box-sizing: content-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-footer {
+    box-sizing: border-box;
+  }
 }

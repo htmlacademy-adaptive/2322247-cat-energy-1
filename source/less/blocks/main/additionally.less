@@ -2,3 +2,34 @@
   padding-left: 45px;
   padding-bottom: 19px;
 }
+
+@media (min-width: @tablet-width) {
+  .additionally__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .additionally__item {
+    width: 161px;
+  }
+
+  .additionally__item:nth-child(odd) {
+    padding-right: 123px;
+  }
+
+  .additionally {
+    margin-top: 57px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__item:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  .additionally__item:not(:nth-child(4n)) {
+    padding-right: 104px;
+  }
+}
