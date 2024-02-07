@@ -1,14 +1,11 @@
-.cooperation {
-  background-color: #f2f2f2;
-  width: 768px;
-
-  &--index {
-    background-color: #ffffff;
-  }
+.cooperation--index {
+  background-color: #ffffff;
 }
 
 .cooperation__container {
   display: flex;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .cooperation__slogan {
@@ -31,17 +28,21 @@
   width: 140px;
 }
 
+.cooperation__location {
+  margin: 0 auto;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: @tablet-width) {
   .cooperation__container {
-    width: 628px;
+    max-width: 628px;
     margin: 0 auto;
     justify-content: space-between;
     padding: 61px;
   }
 
   .cooperation__location {
-    margin: 0 auto;
-    width: 100%;
     height: 400px;
     display: block;
   }
@@ -56,13 +57,12 @@
   .cooperation__adress {
     font-size: 16px;
     line-height: 20px;
-    width: 157px;
+    max-width: 157px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .cooperation {
-    width: 1440px;
     position: relative;
   }
 

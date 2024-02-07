@@ -1,5 +1,5 @@
 .work-principle__wrapper {
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@
 
 @media (min-width: @tablet-width) {
   .work-principle__wrapper {
-    width: 708px;
+    max-width: 708px;
   }
 
   .work-principle__title {
@@ -31,14 +31,14 @@
   }
 
   .work-principle__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
 @media (min-width: @desktop-width) {
   .work-principle__wrapper {
-    width: 1220px;
+    max-width: 1220px;
   }
 
   .work-principle__title {
@@ -46,7 +46,6 @@
   }
 
   .work-principle__list {
-    justify-content: space-between;
     margin-bottom: 69px;
   }
 }
