@@ -1,5 +1,5 @@
 .target-program {
-  padding-top: 46px;
+  margin-top: 46px;
 }
 
 .target-program__list {
@@ -8,5 +8,20 @@
 
 .target__item {
   padding-left: 45px;
-  padding-bottom: 19px;
+  margin-bottom: 19px;
+}
+
+.target__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .target-program {
+    margin-top: 72px;
+  }
+
+  .target__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -11,3 +11,25 @@
 .other-product__list {
   .list-reset();
 }
+
+@media (min-width: @tablet-width) {
+  .other-product__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-product__title {
+    margin-top: 16px;
+  }
+
+  .other-product__container {
+    display: flex;
+    width: 1221px;
+    justify-content: space-between;
+    margin-bottom: 87px;
+  }
+}

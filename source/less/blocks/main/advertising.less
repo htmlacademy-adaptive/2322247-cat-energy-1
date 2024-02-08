@@ -9,8 +9,8 @@
   &::before {
     content: "";
     display: block;
-    width: 279px;
-    height: 290px;
+    width: 100%;
+    height: 100%;
     background-color: #68b738;
     opacity: 85%;
     position: absolute;
@@ -31,4 +31,36 @@
   padding-top: 187px;
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .advertising {
+    width: 707px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+
+  .advertising__text {
+    text-align: start;
+    padding-top: 71px;
+    padding-left: 421px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advertising {
+    width: 245px;
+    height: 288px;
+    margin: 0;
+    margin-top: 80px;
+  }
+
+  .advertising__text {
+    padding-left: 42px;
+    padding-top: 185px;
+    text-align: center;
+    margin: 0;
+  }
 }

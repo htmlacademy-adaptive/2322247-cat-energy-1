@@ -1,15 +1,37 @@
 .contacts-footer {
   background-color: #f2f2f2;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contacts-footer__logo {
-  margin: 0;
-  padding: 40px 96px 20px 96px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 128px;
 }
 
 .contacts-footer__copyright {
   padding: 20px 20px 40px 20px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-footer__logo {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .contacts-footer__copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-footer {
+    box-sizing: border-box;
+  }
 }

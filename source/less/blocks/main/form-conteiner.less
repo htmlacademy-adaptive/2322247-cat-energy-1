@@ -1,5 +1,5 @@
 .form-container {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -13,5 +13,32 @@
   line-height: 36px;
   margin: 0;
   padding: 0;
-  padding-top: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-container {
+    max-width: 768px;
+  }
+
+  .form-container__header {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-container {
+    max-width: 1440px;
+  }
+
+  .form-container__header {
+    padding-left: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-container__container {
+    display: flex;
+  }
 }

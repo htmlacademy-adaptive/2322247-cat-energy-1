@@ -21,3 +21,34 @@
   text-transform: uppercase;
   padding-left: 46px;
 }
+
+.facts__list {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .facts__money {
+    font-size: 20px;
+  }
+
+  .facts__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .facts__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .facts__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .facts__money {
+    padding-left: 0;
+    padding-top: 55px;
+  }
+}

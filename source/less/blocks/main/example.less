@@ -1,8 +1,33 @@
 .example {
   background-color: #eaeaea;
+  width: 100%;
 }
 
 .example__wrapper {
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
+  padding-top: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    max-width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-color: #ffffff;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+
+  .example__wrapper {
+    margin: 0;
+  }
+
+  .example__color {
+    background-color: #f2f2f2;
+  }
 }

@@ -30,3 +30,42 @@
     background-image: url("../img/icon_alarm.svg");
   }
 }
+
+
+@media (min-width: @tablet-width) {
+  .progress__item {
+    min-height: 280px;
+    margin-bottom: 37px;
+
+    &--icon-leaf {
+      max-width: 230px;
+    }
+
+    &--icon-tub {
+      max-width: 246px;
+    }
+
+    &--icon-eat {
+      max-width: 247px;
+    }
+
+    &--icon-alarm {
+      max-width: 249px;
+    }
+  }
+
+  .progress__text {
+    padding-top: 151px;
+    padding-left: 0;
+    padding-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
+    background-position-y: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .progress__item {
+    margin: 0;
+  }
+}

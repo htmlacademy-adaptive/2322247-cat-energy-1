@@ -1,6 +1,11 @@
-.cooperation {
+.cooperation--index {
+  background-color: #ffffff;
+}
+
+.cooperation__container {
   display: flex;
-  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .cooperation__slogan {
@@ -21,4 +26,56 @@
   line-height: 20px;
   font-style: normal;
   width: 140px;
+}
+
+.cooperation__location {
+  margin: 0 auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation__container {
+    max-width: 628px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 61px;
+  }
+
+  .cooperation__location {
+    height: 400px;
+    display: block;
+  }
+
+  .cooperation__slogan {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+    padding: 0;
+  }
+
+  .cooperation__adress {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 157px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cooperation {
+    position: relative;
+  }
+
+  .cooperation__container {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    height: 199px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
