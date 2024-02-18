@@ -1,5 +1,6 @@
 .progress__item {
   .list-reset();
+  margin-bottom: 20px;
 }
 
 .progress__text {
@@ -11,8 +12,8 @@
   padding-left: 80px;
   background-repeat: no-repeat;
   padding-top: 2px;
-  padding-bottom: 24px;
   color: #444444;
+  min-height: 56px;
 
   &--icon-leaf {
     background-image: url("../img/icon_leaf.svg");
@@ -36,28 +37,68 @@
   .progress__item {
     min-height: 280px;
     margin-bottom: 37px;
+    position: relative;
 
     &--icon-leaf {
       max-width: 230px;
+
+      &::before {
+        content: "1";
+        font-size: 280px;
+        line-height: 280px;
+        color: #F2F2F2;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+      }
     }
 
     &--icon-tub {
       max-width: 246px;
+
+      &::before {
+        content: "2";
+        font-size: 280px;
+        line-height: 280px;
+        color: #F2F2F2;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+      }
     }
 
     &--icon-eat {
       max-width: 247px;
+
+      &::before {
+        content: "3";
+        font-size: 280px;
+        line-height: 280px;
+        color: #F2F2F2;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+      }
     }
 
     &--icon-alarm {
       max-width: 249px;
+
+      &::before {
+        content: "4";
+        font-size: 280px;
+        line-height: 280px;
+        color: #F2F2F2;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+      }
     }
   }
 
   .progress__text {
     padding-top: 151px;
     padding-left: 0;
-    padding-bottom: 57px;
     font-size: 16px;
     line-height: 24px;
     background-position-y: 40px;

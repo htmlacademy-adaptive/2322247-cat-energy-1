@@ -4,14 +4,22 @@
 }
 
 .example__wrapper {
-  max-width: 280px;
-  margin: 0 auto;
   padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .example__wrapper {
-    max-width: 708px;
+    min-width: 708px;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example {
+    background-color: #ffffff;
+    border-top: 1px solid #E6E6E6;
   }
 }
 
@@ -20,11 +28,13 @@
     background-color: #ffffff;
     display: flex;
     margin: 0 auto;
-    max-width: 1220px;
+    min-width: 1220px;
+    border: none;
   }
 
   .example__wrapper {
     margin: 0;
+    padding: 0;
   }
 
   .example__color {

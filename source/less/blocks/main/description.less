@@ -1,5 +1,5 @@
 .description {
-  max-width: 140px;
+  min-width: 140px;
 }
 
 .description__title {
@@ -21,9 +21,15 @@
   line-height: 16px;
 }
 
+.description__info tr {
+  display: flex;
+  justify-content: space-between;
+  min-width: 140px;
+}
+
 @media (min-width: @tablet-width) {
   .description {
-    max-width: 250px;
+    min-width: 250px;
     margin: 0 auto;
   }
 
@@ -39,5 +45,22 @@
   .description__info {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 169px;
+  }
+  .description__info tr{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #CDCDCD;
+  }
+  .description__info{
+    margin-top: 23px;
   }
 }

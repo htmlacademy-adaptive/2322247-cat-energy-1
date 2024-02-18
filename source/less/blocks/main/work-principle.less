@@ -1,6 +1,7 @@
 .work-principle__wrapper {
-  max-width: 280px;
-  margin: 0 auto;
+  min-width: 280px;
+  padding-left: 20px;
+  margin-bottom: 49px;
 }
 
 .work-principle__title {
@@ -20,7 +21,9 @@
 
 @media (min-width: @tablet-width) {
   .work-principle__wrapper {
-    max-width: 708px;
+    min-width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .work-principle__title {
@@ -32,13 +35,15 @@
 
   .work-principle__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
 @media (min-width: @desktop-width) {
   .work-principle__wrapper {
-    max-width: 1220px;
+    min-width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .work-principle__title {

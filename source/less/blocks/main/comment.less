@@ -8,11 +8,13 @@
   box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
+  outline: none;
 
   &::placeholder {
     text-transform: uppercase;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
+    color:#444444;
   }
 }
 
@@ -23,11 +25,17 @@
     font-size: 20px;
     line-height: 30px;
     vertical-align: top;
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 628px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment__input {
     margin-top: 78px;
+    width: 1220px;
+    margin-left: 110px;
+    margin-right: 110px;
   }
 }

@@ -68,6 +68,18 @@
   margin: 0 auto;
   margin-top: 302px;
   padding: 20px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #5EAA2F;
+  }
+
+  &:active {
+    background-color: #5EAA2F;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 
@@ -112,10 +124,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .general__wraper {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
   .general__header {
     max-width: 1220px;
     height: auto;
     background-image: none;
+    min-height: 566px;
+    margin-bottom: 82px;
 
     &::before {
       content: "";
@@ -125,9 +144,10 @@
       width: 552px;
       height: 499px;
       top: 29px;
-      left: 447px;
+      left: 555px;
       position: absolute;
       z-index: 2;
+      opacity: 1;
     }
   }
 
@@ -142,6 +162,5 @@
 
   .general__button {
     margin: 52px 80px;
-    margin-bottom: 266px;
   }
 }

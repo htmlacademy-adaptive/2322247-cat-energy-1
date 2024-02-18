@@ -1,7 +1,37 @@
 .additionally__item {
-  padding-left: 45px;
   margin-bottom: 19px;
 }
+
+.additionally__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.additionally__mark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+  margin-right: 15px;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 30px;
+    width: 30px;
+
+  }
+}
+
+.additionally__mark--visually-hidden[type="checkbox"]:checked+.additionally__mark::before {
+  background-image: url("../img/checked.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 @media (min-width: @tablet-width) {
   .additionally__text {
@@ -10,7 +40,7 @@
   }
 
   .additionally__item {
-    width: 161px;
+    width: 221px;
   }
 
   .additionally__item:nth-child(odd) {
@@ -21,10 +51,21 @@
     margin-top: 57px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .additionally {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .additionally__item{
+    margin: 0;
+  }
+
   .additionally__item:nth-child(odd) {
     padding-right: 0;
   }

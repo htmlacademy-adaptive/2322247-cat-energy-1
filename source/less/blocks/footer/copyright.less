@@ -2,6 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+  outline: none;
+
+  &:hover svg,
+  &:focus svg {
+    fill: #68B738;
+  }
+
+  &:active svg {
+    fill: #68B738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -9,15 +24,14 @@
   font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  text-decoration: none;
+  outline: none;
 }
 
 .copyright__logo {
   display: block;
-  background-image: url("../img/html_academy.png");
-  background-repeat: no-repeat;
   width: 27px;
   height: 34px;
+  outline: none;
 }
 
 @media (min-width: @tablet-width) {

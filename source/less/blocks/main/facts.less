@@ -2,6 +2,16 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
+  border: 1px solid #CDCDCD;
+  border-radius: 5%;
+
+  &--weight {
+    padding: 15px 41px 17px 41px;
+  }
+
+  &--day {
+    padding: 15px 20px 17px 20px;
+  }
 }
 
 .facts__description {
@@ -11,6 +21,19 @@
   line-height: 12px;
   text-transform: lowercase;
   color: #444444;
+  margin: 0;
+  width: 87px;
+  background-color: #eaeaea;
+  position: relative;
+  top: -9px;
+  left: 20px;
+  text-align: center;
+
+  &--weight {
+    width: 77px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .facts__money {
@@ -19,36 +42,78 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  padding-left: 46px;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
 }
 
 .facts__list {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.facts__item {
+  width: 124px;
 }
 
 @media (min-width: @tablet-width) {
+  .facts__item {
+    width: auto;
+  }
+
+  .facts__list {
+    min-width: 367px;
+  }
+
   .facts__money {
     font-size: 20px;
+    width: 174px;
+    text-align: right;
   }
 
   .facts__number {
     font-size: 30px;
     line-height: 37px;
+
+    &--weight {
+      padding: 15px 57px 20px 57px;
+    }
+
+    &--day {
+      padding: 15px 30px 20px 30px;
+    }
   }
 
   .facts__description {
     font-size: 14px;
     line-height: 14px;
-  }
+    background-color: #ffffff;
 
-  .facts__list {
-    display: flex;
+    &--weight {
+      padding: 0;
+      width: 114px;
+      left: 24px;
+    }
+
+    &--day {
+      width: 142px;
+      left: 10px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .facts__money {
     padding-left: 0;
-    padding-top: 55px;
+    margin-top: 55px;
+    width: auto;
+    text-align: start;
+    justify-content: flex-start;
+    margin-bottom: 75px;
+  }
+
+  .facts__description {
+    background-color: #f2f2f2;
   }
 }

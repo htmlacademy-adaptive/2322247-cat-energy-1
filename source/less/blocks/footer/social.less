@@ -1,3 +1,13 @@
+.social {
+  height: 62px;
+  display: flex;
+  border: 1px solid #D9D9D9;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-left: none;
+  border-right: none;
+}
+
 .social__list {
   .list-reset();
   display: flex;
@@ -11,17 +21,21 @@
   height: 22px;
   background-repeat: no-repeat;
   margin-right: 24px;
+  outline: none;
 
-  &--vkontakte {
-    background-image: url("../img/vk.svg");
-    background-position: 0 3px;
+  &:hover svg,
+  &:focus svg {
+    fill: #68B738;
   }
 
-  &--youtube {
-    background-image: url("../img/youtube.svg");
+  &:active svg{
+    fill: #68B738;
+    opacity: 0.3;
   }
+}
 
-  &--telegram {
-    background-image: url("../img/telegram.svg");
+@media (min-width: @tablet-width) {
+  .social {
+    border: none;
   }
 }
