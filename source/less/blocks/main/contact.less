@@ -1,14 +1,14 @@
 .contact__input {
   padding-right: 14px;
   padding-left: 15px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 13px;
   border: 1px solid #e7e7e7;
   width: 100%;
   font-size: 16px;
   line-height: 18px;
   background-repeat: no-repeat;
-  background-position: right 20px bottom 18px;
+  background-position: right 12px bottom 18px;
   background-size: 18px 13px;
 
   &::placeholder {
@@ -19,11 +19,11 @@
   }
 
   &--email {
-    background-image: url("../img/e-mail_form.svg");
+    background-image: url("../img/email-form.svg");
   }
 
   &--phone {
-    background-image: url("../img/telephone_form.svg");
+    background-image: url("../img/telephone-form.svg");
   }
 
   &:hover {
@@ -39,7 +39,7 @@
   }
 
   &--email:focus {
-    background-image: url("../img/e-mail_form_focus.svg");
+    background-image: url("../img/email-form-focus.svg");
   }
 
   &:invalid .contact__input::after {
@@ -51,7 +51,7 @@
   }
 
   &--email:invalid {
-    background-image: url("../img/e-mail_form_invalid.svg");
+    background-image: url("../img/email-form-invalid.svg");
   }
 }
 
@@ -103,7 +103,7 @@
   .contact__input {
     font-size: 20px;
     line-height: 30px;
-    padding: 11px 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -131,5 +131,11 @@
     justify-content: space-between;
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  .contact__input {
+    padding: 9px 21px;
+    padding-top: 13px;
+    background-position: right 14px bottom 19px;
   }
 }

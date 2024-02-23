@@ -1,6 +1,8 @@
 .catalog-choice__item {
   .list-reset();
   background-color: #f2f2f2;
+  position: relative;
+  z-index: -2;
 }
 
 
@@ -11,17 +13,33 @@
   line-height: 37px;
   padding-left: 90px;
   background-repeat: no-repeat;
-  padding-top: 30px;
+  padding-top: 25px;
+  position: relative;
 
   &--skinny {
-    background-image: url("../img/black_cat.svg");
-    background-position: 27px 21px;
-    padding-bottom: 7px;
+    margin-block-end: 22px;
+    background-image: url("../img/black-cat.svg");
+    background-position: 27px 16px;
+    padding-bottom: 10px;
   }
 
   &--fat {
-    background-image: url("../img/black_tiger.svg");
-    background-position: 12px 35px;
+    margin-block-end: 29px;
+    background-image: url("../img/black-tiger.svg");
+    background-position: 12px 30px;
+  }
+
+  &::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 21px;
+    top: 21px;
+    z-index: -1;
   }
 }
 
@@ -45,23 +63,23 @@
   line-height: 16px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 19px;
+  padding-top: 17px;
   padding-bottom: 22px;
   display: block;
-  background-image: url("../img/arrow_catalog.svg");
+  background-image: url("../img/arrow-catalog.svg");
   background-repeat: no-repeat;
-  background-position: 122px 22px;
+  background-position: 100px 19px;
   border-top: 1px solid #d9d9d9;
   outline: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-image: url("../img/arrow_catalog_hover.svg");
+    background-image: url("../img/arrow-catalog-hover.svg");
   }
 
   &:active {
-    background-image: url("../img/arrow_catalog_hover.svg");
+    background-image: url("../img/arrow-catalog-hover.svg");
     opacity: 0.3;
   }
 }
@@ -72,9 +90,13 @@
     line-height: 36px;
     padding-top: 77px;
     padding-left: 53px;
-    margin-bottom: 0;
+    margin: 0;
     padding-bottom: 0;
     background-image: none;
+
+    &::after {
+      display: none;
+    }
   }
 
   .catalog-choice__item {
@@ -82,16 +104,17 @@
     margin: auto;
 
     &--skinny {
-      background-image: url("../img/black_cat_tablet.svg");
+      background-image: url("../img/black-cat-tablet.svg");
       background-repeat: no-repeat;
       background-position: 445px 81px;
       padding-bottom: 7px;
     }
 
     &--fat {
-      background-image: url("../img/black_tiger_tablet.svg");
+      background-image: url("../img/black-tiger-tablet.svg");
       background-repeat: no-repeat;
       background-position: 411px 91px;
+      margin-top: 30px;
     }
   }
 
@@ -107,11 +130,11 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 52px;
-    padding-top: 52px;
-    padding-bottom: 57px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     border: none;
     margin: 0;
-    background-position: 185px 61px;
+    background-position: 182px 38px;
   }
 }
 
@@ -127,13 +150,13 @@
     padding-top: 73px;
 
     &--skinny {
-      padding-right: 61px;
-      max-width: 457px;
+      padding-right: 46px;
+      max-width: 471px;
     }
 
     &--fat {
-      padding-right: 67px;
-      max-width: 451px;
+      padding-right: 58px;
+      max-width: 460px;
     }
   }
 
@@ -147,7 +170,7 @@
 
   .catalog-choice__title {
     margin: 0;
-    padding-top: 77px;
+    padding-top: 80px;
     padding-left: 214px;
     position: relative;
 
@@ -156,7 +179,7 @@
       display: block;
       width: 100px;
       height: 106px;
-      background-image: url("../img/black_cat_desktop.svg");
+      background-image: url("../img/black-cat-desktop.svg");
       position: absolute;
       top: 41px;
       left: 52px;
@@ -167,7 +190,7 @@
       display: block;
       width: 134px;
       height: 100px;
-      background-image: url("../img/black_tiger_desktop.svg");
+      background-image: url("../img/black-tiger-desktop.svg");
       position: absolute;
       top: 47px;
       left: 33px;
@@ -177,6 +200,7 @@
   .catalog-choice__item {
     background-image: none;
     padding: 0;
+    margin: 0;
   }
 
   .catalog-choice__item:nth-child(odd) {

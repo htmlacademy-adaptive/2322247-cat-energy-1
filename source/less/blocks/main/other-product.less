@@ -20,6 +20,10 @@
   }
 }
 
+.other-product {
+  overflow: hidden;
+}
+
 .other-product__list {
   .list-reset();
 }
@@ -28,12 +32,12 @@
   .other-product__title {
     font-size: 36px;
     line-height: 36px;
-    margin-top: 10px;
+    margin-top: 11px;
     padding-left: 70px;
 
     &::after {
       left: 0;
-      top: 22px;
+      top: 23px;
       z-index: -2;
     }
 
@@ -50,6 +54,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .other-product {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
   .other-product__title {
     margin-top: 16px;
     padding-left: 110px;

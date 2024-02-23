@@ -7,6 +7,7 @@
 
 .catalog__list {
   .list-reset();
+  margin: 0 auto;
 }
 
 .catalog__header {
@@ -17,7 +18,7 @@
   line-height: 36px;
   border-top: 1px solid #d9d9d9;
   padding-left: 20px;
-  margin: 0;
+  padding-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,7 +29,7 @@
   .catalog__header {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 65px;
+    padding-top: 50px;
     padding-bottom: 84px;
     padding-left: 30px;
     border: none;
@@ -49,11 +50,15 @@
 
   .catalog__list {
     min-width: 1220px;
-    padding-left: 90px;
+    margin-top: 84px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
   }
 
   .catalog__header {
     margin-top: 74px;
-    padding-left: 110px;
+    padding: 0;
   }
 }

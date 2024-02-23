@@ -8,6 +8,7 @@
 .main-header__container {
   width: 100%;
   box-sizing: border-box;
+  padding-top: 13px;
 }
 
 .main-header__logo {
@@ -23,7 +24,7 @@
   }
 
   &--name {
-    background-image: url("../img/logo_text.svg");
+    background-image: url("../img/logo-text.svg");
     width: 101px;
     height: 18px;
     margin-left: 56px;
@@ -42,7 +43,7 @@
 .main-header__logo-container {
   display: flex;
   max-width: 320px;
-  padding: 13px 20px 14px 20px;
+  padding: 0 20px 14px 20px;
   box-sizing: border-box;
   align-items: center;
   margin: 0 auto;
@@ -53,8 +54,8 @@
   .main-header__container {
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding-top: 25px;
+    width: 704px;
   }
 
   .main-header {
@@ -63,30 +64,31 @@
   }
 
   .main-header__logo--img {
-    background-image: url("../img/logo_tablet.svg");
+    background-image: url("../img/logo-tablet.svg");
     width: 60px;
     height: 50px;
   }
 
   .main-header__logo--name {
-    background-image: url("../img/logo_text_tablet.svg");
+    background-image: url("../img/logo-text-tablet.svg");
     margin-left: 13px;
-    margin-right: 94px;
+    margin-right: 91px;
   }
 
   .main-header__logo-container {
     margin: 0;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-header {
-    padding-top: 55px;
+    padding-top: 30px;
     padding-left: 110px;
     padding-right: 110px;
-    min-width: 1220px;
+    width: 1220px;
     position: relative;
+    margin: 0 auto;
 
     &--index::before {
       content: "";
@@ -97,7 +99,7 @@
       opacity: 85%;
       position: absolute;
       top: 0;
-      right: -110px;
+      right: 0;
       z-index: 2;
     }
 
@@ -106,18 +108,19 @@
       display: block;
       width: 720px;
       height: 694px;
-      background-image: url("../img/cat_tongue_desktop.jpg");
+      background-image: url("../img/cat-tongue-desktop.jpg");
       background-repeat: no-repeat;
       position: absolute;
       top: 0;
-      right: -110px;
+      right: 0;
       z-index: 1;
     }
   }
 
   .main-header__container {
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0;
+    width: 1220px;
   }
 
   .main-header__logo-container {
@@ -129,7 +132,7 @@
   }
 
   .main-header__logo--img {
-    background-image: url("../img/logo_desktop.svg");
+    background-image: url("../img/logo-desktop.svg");
     width: 202px;
     height: 59px;
     outline: none;

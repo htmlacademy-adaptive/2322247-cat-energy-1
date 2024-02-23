@@ -16,8 +16,8 @@
         <a class="main-header__logo main-header__logo--name" href="#"><span class="visually-hidden">Cat
             energy</span></a>
       </div>
-      <!--main-nav--opened-->
-      <nav class="main-header__nav main-nav  main-nav--closed">
+      <!--main-nav--closed-->
+      <nav class="main-header__nav main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper menu-open">
           <ul class="main-nav__list site-list">
@@ -43,9 +43,9 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden"> Функциональное питание для котов Cat energy</h1>
-    <section class="general">
+    <section class="general container">
       <div class="general__wrapper">
-        <header class="general__header">
+        <header class="general__header container">
           <h2 class="general__meaning"> Функциональное питание для котов</h2>
           <p class="general__slogan">
             Занялся собой? Займись котом!
@@ -54,7 +54,7 @@
         </header>
       </div>
     </section>
-    <section class="program-goal">
+    <section class="program-goal container">
       <div class="program-goal__wrapper">
         <h2 class="visually-hidden">Возможные варианты программ</h2>
         <ul class="program-goal__list catalog-choice">
@@ -74,7 +74,7 @@
         </ul>
       </div>
     </section>
-    <section class="work-principle">
+    <section class="work-principle container">
       <div class="work-principle__wrapper">
         <h2 class="work-principle__title">Как это работает</h2>
         <ul class="work-principle__list progress">
@@ -98,7 +98,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper container">
         <div class="example__desc desc">
           <h2 class="desc__title">Живой пример</h2>
           <div class="desc__color">
@@ -121,7 +121,10 @@
                     </div>
                   </dl>
                 </div>
-                <p class="facts__money">Затраты на питание: 15 000 руб.</p>
+                <div class="facts__money">
+                  <p class="facts__money--title">Затраты на питание:</p>
+                  <p class="facts__money--number">15 000 руб.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -130,10 +133,10 @@
       <div class="example__slider result-cat">
         <ul class="result-cat__list slider">
           <li class="slider__item">
-            <img class="slider__image slider__image--fat" src="./img/fat_cat_mobile.png" alt="Большой кот до похудения">
+            <img class="slider__image slider__image--fat" src="./img/fat-cat-mobile.png" alt="Большой кот до похудения">
           </li>
           <li class="slider__item">
-            <img class="slider__image slider__image--skinny" src="./img/skinny_cat_mobile.png"
+            <img class="slider__image slider__image--skinny" src="./img/skinny-cat-mobile.png"
               alt="Кот после похудения">
           </li>
         </ul>
@@ -157,7 +160,7 @@
     </section>
     <section class="main-footer__contacts contacts-footer">
       <a class="contacts-footer__logo" href="#">
-        <img src="./img/logo_footer.svg" width="128" height="24" alt="Cat energy">
+        <img src="./img/logo-footer.svg" width="128" height="24" alt="Cat energy">
       </a>
       <div class="contacts-footer__social social">
         <ul class="social__list">

@@ -1,5 +1,5 @@
 .additionally__item {
-  margin-bottom: 19px;
+  margin-bottom: 10px;
 }
 
 .additionally__label {
@@ -40,6 +40,7 @@
 
   .additionally__item {
     width: 221px;
+    margin-bottom: 31px;
   }
 
   .additionally__item:nth-child(odd) {
@@ -52,6 +53,24 @@
     flex-wrap: wrap;
     padding-left: 70px;
     padding-right: 70px;
+  }
+
+  .additionally__mark {
+    width: 39px;
+    height: 39px;
+    margin-right: 19px;
+
+    &::before {
+      width: 39px;
+      height: 39px;
+    }
+  }
+
+  .additionally__mark--visually-hidden[type="checkbox"]:checked + .additionally__mark::before {
+    background-image: url("../img/checked-tablet.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
