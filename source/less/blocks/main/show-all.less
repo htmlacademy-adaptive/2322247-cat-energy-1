@@ -1,5 +1,19 @@
+.show-all {
+  background-image: url("../img/plus-catalog-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 145px 25px;
+}
+
+.show-all__conteiner {
+  width: 219px;
+
+  &::after {
+    content: "";
+  }
+}
+
 .show-all__catalog {
-  width: 280px;
+  width: 100%;
   background-color: #f2f2f2;
   color: #444444;
   border: none;
@@ -10,6 +24,15 @@
   padding: 10px 95px;
   text-decoration: none;
   margin-top: 21px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #ebebeb;
+  }
 }
 
 .show-all__title {
@@ -19,8 +42,10 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-top: 53px;
+  margin-top: 60px;
   margin-bottom: 8px;
+  width: 219px;
+  text-align: center;
 }
 
 .show-all__slogan {
@@ -32,13 +57,33 @@
 }
 
 @media (min-width: @tablet-width) {
+  .show-all {
+    background-image: url("../img/plus-catalog-tablet.svg");
+    background-position: 134px 134px;
+    margin-left: 23px;
+    position: relative;
+    padding: 0;
+  }
+
+  .show-all::after {
+    content: "";
+    width: 324px;
+    height: 430px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    border: 2px solid #f2f2f2;
+    left: 0;
+  }
+
   .show-all__title {
     font-size: 20px;
     line-height: 24px;
     width: 170px;
     text-align: center;
-    margin-top: 242px;
-    margin-bottom: 23px;
+    padding-top: 212px;
+    padding-bottom: 23px;
+    margin: 0 auto;
   }
 
   .show-all__slogan {
@@ -52,12 +97,34 @@
     font-size: 16px;
     line-height: 20px;
     width: 250px;
-    margin: 32px auto;
-    margin-bottom: 40px;
+    margin: 6px auto;
     box-sizing: border-box;
     display: flex;
     padding: 10px 0;
     align-items: center;
     justify-content: center;
+  }
+
+  .show-all__conteiner {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .show-all__catalog {
+    width: 169px;
+  }
+
+  .show-all::after {
+    width: 245px;
+  }
+
+  .show-all {
+    background-position: 92px 132px;
+    margin-left: 0;
+  }
+
+  .show-all__title {
+    padding-top: 197px;
   }
 }

@@ -1,9 +1,10 @@
 .advertising {
   display: block;
-  width: 279px;
   height: 290px;
-  background-image: url("../img/cat_backpack.jpg");
-  margin: 35px 0;
+  background-image: url("../img/cat-backpack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 35px 20px;
   position: relative;
 
   &::before {
@@ -28,9 +29,21 @@
   width: 161px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 187px;
+  padding-top: 185px;
   position: relative;
   z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/gift-mobile.svg");
+    background-position: center;
+    position: absolute;
+    top: 58px;
+    left: 41px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -40,12 +53,21 @@
     background-repeat: no-repeat;
     margin-top: 70px;
     margin-bottom: 75px;
+    margin-left: 30px;
+    background-size: 98%;
+    background-position: center -310px;
   }
 
   .advertising__text {
     text-align: start;
     padding-top: 71px;
-    padding-left: 421px;
+    padding-left: 299px;
+
+    &::before {
+      background-image: url("../img/gift-tablet.svg");
+      top: 60px;
+      left: -45px;
+    }
   }
 }
 
@@ -54,7 +76,9 @@
     width: 245px;
     height: 288px;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 45px;
+    background-position: -34px center;
+    background-size: cover;
   }
 
   .advertising__text {
@@ -62,5 +86,10 @@
     padding-top: 185px;
     text-align: center;
     margin: 0;
+
+    &::before {
+      left: 84px;
+      top: 57px;
+    }
   }
 }

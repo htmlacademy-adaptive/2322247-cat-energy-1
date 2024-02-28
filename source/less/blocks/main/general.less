@@ -3,7 +3,7 @@
   position: relative;
   max-width: 320px;
   min-height: 302px;
-  background-image: url("../img/cat_tongue.jpg");
+  background-image: url("../img/cat-tongue.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
 
@@ -24,11 +24,12 @@
     display: block;
     width: 280px;
     height: 270px;
-    background-image: url("../img/product_general.png");
+    background-image: url("../img/product-general.png");
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
-    top: 185px;
+    top: 166px;
+    left: 20px;
   }
 }
 
@@ -38,7 +39,7 @@
   line-height: 36px;
   position: relative;
   z-index: 1;
-  padding-left: 36px;
+  text-align: center;
   padding-top: 27px;
   margin: 0;
 }
@@ -67,7 +68,19 @@
   width: 280px;
   margin: 0 auto;
   margin-top: 302px;
-  padding: 20px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 
@@ -79,7 +92,7 @@
     min-height: 875px;
     color: #000000;
     background-color: #ffffff;
-    background-image: url("../img/product_general_tablet.png");
+    background-image: url("../img/product-general-tablet.png");
     background-position: 0 266px;
 
     &::before {
@@ -97,6 +110,7 @@
     width: 416px;
     padding-left: 90px;
     padding-top: 65px;
+    text-align: left;
   }
 
   .general__slogan {
@@ -108,19 +122,30 @@
 
   .general__button {
     margin: 50px 90px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 245px;
+    padding: 14px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .general__wraper {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
   .general__header {
     max-width: 1220px;
     height: auto;
     background-image: none;
+    min-height: 566px;
+    margin-bottom: 92px;
 
     &::before {
       content: "";
       display: block;
-      background-image: url("../img/product_general_desktop.png");
+      background-image: url("../img/product-general-desktop.png");
       background-color: transparent;
       width: 552px;
       height: 499px;
@@ -128,6 +153,7 @@
       left: 447px;
       position: absolute;
       z-index: 2;
+      opacity: 1;
     }
   }
 
@@ -142,6 +168,9 @@
 
   .general__button {
     margin: 52px 80px;
-    margin-bottom: 266px;
+    width: 242px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 20px;
   }
 }

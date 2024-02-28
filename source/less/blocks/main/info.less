@@ -6,11 +6,11 @@
   display: flex;
 
   &--weight {
-    margin-top: 14px;
+    margin-top: 12px;
   }
 
   &--age {
-    margin-top: 14px;
+    margin-top: 12px;
   }
 }
 
@@ -27,23 +27,80 @@
     text-transform: uppercase;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
+    color: #444444;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus .info__input::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #444444;
+  }
+}
+
+.info__label {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+
+  &--name {
+    min-width: 39px;
+  }
+
+  &--weight {
+    min-width: 60px;
+  }
+
+  &--age {
+    min-width: 94px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .info {
     margin-top: 66px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .info__item {
+    &--weight {
+      margin-top: 20px;
+    }
+
+    &--age {
+      margin-top: 20px;
+    }
   }
 
   .info__label {
     font-size: 20px;
     line-height: 30px;
+
+    &--name {
+      min-width: 47px;
+    }
+
+    &--weight {
+      min-width: 75px;
+    }
+
+    &--age {
+      min-width: 117px;
+    }
   }
 
   .info__input {
-    margin: 11px 20px;
+    padding: 11px 20px;
     font-size: 20px;
     line-height: 30px;
+    margin-right: 0;
+    margin-top: 0;
   }
 }
 
@@ -51,5 +108,14 @@
 @media (min-width: @desktop-width) {
   .info {
     margin-top: 66px;
+    padding: 0;
+  }
+
+  .info__input {
+    padding: 10px 20px;
+  }
+
+  .info__input--age {
+    margin-bottom: 0;
   }
 }
