@@ -18,6 +18,10 @@
     top: 0;
     bottom: 0;
   }
+
+  @media (min-resolution:2dppx) {
+    background-image: url("../img/cat-backpack@2x.jpg");
+  }
 }
 
 .advertising__text {
@@ -54,8 +58,12 @@
     margin-top: 70px;
     margin-bottom: 75px;
     margin-left: 30px;
-    background-size: 98%;
-    background-position: center -310px;
+    background-position: center;
+    background-image: url("../img/cat-backpack-tablet.jpg");
+
+    @media (min-resolution:2dppx) {
+      background-image: url("../img/cat-backpack-tablet@2x.jpg");
+    }
   }
 
   .advertising__text {
@@ -77,8 +85,12 @@
     height: 288px;
     margin: 0;
     margin-top: 45px;
-    background-position: -34px center;
-    background-size: cover;
+    background-position: center;
+    background-image: url("../img/cat-backpack-desktop.jpg");
+
+    @media (min-resolution:2dppx) {
+      background-image: url("../img/cat-backpack-desktop@2x.jpg");
+    }
   }
 
   .advertising__text {

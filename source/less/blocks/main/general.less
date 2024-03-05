@@ -6,6 +6,11 @@
   background-image: url("../img/cat-tongue.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
+  background-size: contain;
+
+  @media (min-resolution:2dppx) {
+    background-image: url("../img/cat-tongue@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -30,6 +35,11 @@
     z-index: 1;
     top: 166px;
     left: 20px;
+
+    @media (min-resolution:2dppx) {
+      background-image: url("../img/product-general@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -102,6 +112,12 @@
     &::after {
       display: none;
     }
+
+
+    @media (min-resolution:2dppx) {
+      background-image: url("../img/product-general-tablet@2x.png");
+      background-size: contain;
+    }
   }
 
   .general__meaning {
@@ -154,6 +170,11 @@
       position: absolute;
       z-index: 2;
       opacity: 1;
+
+      @media (min-resolution:2dppx) {
+        background-image: url("../img/product-general-desktop@2x.png");
+        background-size: contain;
+      }
     }
   }
 
