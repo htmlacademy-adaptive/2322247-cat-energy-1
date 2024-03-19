@@ -9,7 +9,7 @@
   line-height: 18px;
   background-repeat: no-repeat;
   background-position: right 12px bottom 18px;
-  background-size: 18px 13px;
+  background-size: 18px 15px;
 
   &::placeholder {
     text-transform: uppercase;
@@ -19,11 +19,11 @@
   }
 
   &--email {
-    background-image: url("../img/email-form.svg");
+    background-image: url("../img/sprite.svg#email-form");
   }
 
   &--phone {
-    background-image: url("../img/telephone-form.svg");
+    background-image: url("../img/sprite.svg#telephone-form");
   }
 
   &:hover {
@@ -39,7 +39,7 @@
   }
 
   &--email:focus {
-    background-image: url("../img/email-form-focus.svg");
+    background-image: url("../img/sprite.svg#email-form-focus");
   }
 
   &:invalid .contact__input::after {
@@ -51,7 +51,7 @@
   }
 
   &--email:invalid {
-    background-image: url("../img/email-form-invalid.svg");
+    background-image: url("../img/sprite.svg#email-form-invalid");
   }
 }
 
