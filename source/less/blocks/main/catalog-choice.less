@@ -13,21 +13,10 @@
   line-height: 37px;
   padding-left: 90px;
   background-repeat: no-repeat;
-  padding-top: 25px;
+  padding-top: 30px;
   position: relative;
-
-  &--skinny {
-    margin-block-end: 22px;
-    background-image: url("../img/black-cat.svg");
-    background-position: 27px 16px;
-    padding-bottom: 10px;
-  }
-
-  &--fat {
-    margin-block-end: 29px;
-    background-image: url("../img/black-tiger.svg");
-    background-position: 12px 30px;
-  }
+  margin-bottom: 30px;
+  margin-top: 20px;
 
   &::after {
     content: "";
@@ -37,8 +26,8 @@
     border-radius: 50%;
     display: block;
     position: absolute;
-    left: 21px;
-    top: 21px;
+    left: 20px;
+    top: 24px;
     z-index: -1;
   }
 }
@@ -50,7 +39,7 @@
   color: #444444;
   font-size: 14px;
   line-height: 18px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   padding-left: 20px;
   padding-right: 33px;
 }
@@ -61,30 +50,53 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  margin-left: 20px;
+  margin-left: 21px;
   margin-right: 20px;
-  padding-top: 17px;
+  padding-top: 19px;
   padding-bottom: 22px;
   display: block;
-  background-image: url("../img/arrow-catalog.svg");
-  background-repeat: no-repeat;
-  background-position: 100px 19px;
+  background-image: url("../img/sprite.svg#arrow-catalog");
+  background-position: 99px 21px;
   border-top: 1px solid #d9d9d9;
   outline: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-image: url("../img/arrow-catalog-hover.svg");
+    background-image: url("../img/sprite.svg#arrow-catalog-hover");
   }
 
   &:active {
-    background-image: url("../img/arrow-catalog-hover.svg");
+    background-image: url("../img/sprite.svg#arrow-catalog-hover");
     opacity: 0.3;
   }
 }
 
+.catalog-choice__logo--skinny {
+  position: absolute;
+  top: 21px;
+  left: 26px;
+}
+
+.catalog-choice__logo--fat {
+  position: absolute;
+  top: 35px;
+  left: 12px;
+}
+
 @media (min-width: @tablet-width) {
+  .catalog-choice__logo--skinny {
+    top: 81px;
+    right: 64px;
+    left: auto;
+  }
+
+  .catalog-choice__logo--fat {
+    left: auto;
+    top: 130px;
+    right: 30px;
+  }
+
   .catalog-choice__title {
     font-size: 36px;
     line-height: 36px;
@@ -97,25 +109,15 @@
     &::after {
       display: none;
     }
+
+    &--fat {
+      padding-top: 115px;
+    }
   }
 
   .catalog-choice__item {
     width: 708px;
     margin: auto;
-
-    &--skinny {
-      background-image: url("../img/black-cat-tablet.svg");
-      background-repeat: no-repeat;
-      background-position: 445px 81px;
-      padding-bottom: 7px;
-    }
-
-    &--fat {
-      background-image: url("../img/black-tiger-tablet.svg");
-      background-repeat: no-repeat;
-      background-position: 411px 91px;
-      margin-top: 30px;
-    }
   }
 
   .catalog-choice__description {
@@ -134,11 +136,25 @@
     padding-bottom: 50px;
     border: none;
     margin: 0;
-    background-position: 182px 38px;
+    background-position: 182px 39px;
+
+    &--fat {
+      padding-bottom: 56px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog-choice__logo--skinny {
+    top: 45px;
+    left: 53px;
+  }
+
+  .catalog-choice__logo--fat {
+    left: 34px;
+    top: 50px;
+  }
+
   .catalog-choice {
     display: flex;
     justify-content: space-between;
@@ -148,10 +164,11 @@
     padding: 0;
     padding-left: 52px;
     padding-top: 73px;
+    font-size: 14px;
 
     &--skinny {
-      padding-right: 46px;
-      max-width: 471px;
+      padding-right: 61px;
+      max-width: 457px;
     }
 
     &--fat {
@@ -173,28 +190,6 @@
     padding-top: 80px;
     padding-left: 214px;
     position: relative;
-
-    &--skinny::before {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 106px;
-      background-image: url("../img/black-cat-desktop.svg");
-      position: absolute;
-      top: 41px;
-      left: 52px;
-    }
-
-    &--fat::before {
-      content: "";
-      display: block;
-      width: 134px;
-      height: 100px;
-      background-image: url("../img/black-tiger-desktop.svg");
-      position: absolute;
-      top: 47px;
-      left: 33px;
-    }
   }
 
   .catalog-choice__item {

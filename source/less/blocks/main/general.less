@@ -23,24 +23,6 @@
     top: 0;
     bottom: 0;
   }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 270px;
-    background-image: url("../img/product-general.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 1;
-    top: 166px;
-    left: 20px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/product-general@2x.png");
-      background-size: cover;
-    }
-  }
 }
 
 .general__meaning {
@@ -93,6 +75,11 @@
   }
 }
 
+.general__product {
+  position: absolute;
+  top: 168px;
+  left: 19px;
+}
 
 @media (min-width: @tablet-width) {
   .general__header {
@@ -142,6 +129,12 @@
     line-height: 26px;
     width: 245px;
     padding: 14px;
+    position: relative;
+  }
+
+  .general__product {
+    top: 266px;
+    left: 0px;
   }
 }
 
@@ -157,25 +150,6 @@
     background-image: none;
     min-height: 566px;
     margin-bottom: 92px;
-
-    &::before {
-      content: "";
-      display: block;
-      background-image: url("../img/product-general-desktop.png");
-      background-color: transparent;
-      width: 552px;
-      height: 499px;
-      top: 29px;
-      left: 447px;
-      position: absolute;
-      z-index: 2;
-      opacity: 1;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/product-general-desktop@2x.png");
-        background-size: contain;
-      }
-    }
   }
 
   .general__meaning {
@@ -193,5 +167,11 @@
     font-size: 20px;
     line-height: 26px;
     padding: 14px 20px;
+  }
+
+  .general__product {
+    top: 28px;
+    left: 445px;
+    z-index: 2;
   }
 }
