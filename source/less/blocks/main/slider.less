@@ -6,24 +6,6 @@
 .slider__item {
   width: 140px;
   height: 256px;
-  background-size: cover;
-
-  &--fat {
-    background-image: url("../img/fat-cat-slider-mobile.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/fat-cat-slider-mobile@2x.png");
-    }
-  }
-
-  &--skinny {
-    background-image: url("../img/skinny-cat-slider-mobile.png");
-    background-position: right;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/skinny-cat-slider-mobile@2x.png");
-    }
-  }
 }
 
 
@@ -31,16 +13,11 @@
   width: 40px;
   height: 256px;
   border: none;
-  background-image: url("../img/slider-button-mobile.png");
+  background-image: url("../img/sprite.svg#slider-button-mobile");
   background-color: transparent;
   position: absolute;
   top: 0;
   left: 120px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/slider-button-mobile@2x.png");
-    background-size: contain;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -51,33 +28,12 @@
   .slider__item {
     width: 280px;
     height: 512px;
-
-    &--fat {
-      background-image: url("../img/fat-cat-slider.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/fat-cat-slider@2x.png");
-      }
-    }
-
-    &--skinny {
-      background-image: url("../img/skinny-cat-slider.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/skinny-cat-slider@2x.png");
-      }
-    }
   }
 
   .slider__toggle {
     height: 512px;
     left: 260px;
-    background-image: url("../img/slider-button.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/slider-button@2x.png");
-      background-size: contain;
-    }
+    background-image: url("../img/sprite.svg#slider-button-tablet");
   }
 }
 

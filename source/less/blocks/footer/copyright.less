@@ -5,17 +5,19 @@
   text-decoration: none;
   outline: none;
 
-  &:hover svg,
-  &:focus svg {
-    fill: #68b738;
-  }
-
-  &:active svg {
-    fill: #68b738;
+  &:hover,
+  &:focus {
+    .copyright__logo {
+      background-color: #68b738;
+    }
   }
 
   &:active {
     opacity: 0.3;
+
+    .copyright__logo {
+      background-color: #68b738;
+    }
   }
 }
 
@@ -32,6 +34,8 @@
   width: 27px;
   height: 34px;
   outline: none;
+  mask-image: url("../img/sprite.svg#html-academy");
+  background-color: #666666;
 }
 
 @media (min-width: @tablet-width) {
