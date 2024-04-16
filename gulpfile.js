@@ -79,8 +79,8 @@ export const sprite = () => {
 
 export const copy = (done) => {
   gulp.src([
-    'source/fonts/*{woff2,woff}',
-    'source/*/ico'
+    'source/fonts/*/*{woff2,woff}',
+    'source/*ico'
   ], {
     base: 'source'
   })
