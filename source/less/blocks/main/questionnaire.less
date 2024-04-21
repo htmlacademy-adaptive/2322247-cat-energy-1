@@ -35,50 +35,10 @@
   &--contact-owner {
     padding-top: 27px;
     width: 187px;
-
-    &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-color: #68b738;
-      display: block;
-      position: absolute;
-      top: 41px;
-      left: 207px;
-      z-index: -1;
-    }
-  }
-
-  &--comment {
-    padding-top: 22px;
-
-    &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-color: #68b738;
-      display: block;
-      position: absolute;
-      top: 36px;
-      left: 141px;
-      z-index: -1;
-    }
   }
 
   &--other-part {
-    padding-top: 24px;
-
-    &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-color: #68b738;
-      display: block;
-      position: absolute;
-      top: 37px;
-      left: 161px;
-      z-index: -1;
-    }
+    padding-top: 20px;
   }
 }
 
@@ -114,7 +74,7 @@
   color: #000000;
   display: block;
   padding-top: 21px;
-  padding-left: 64px;
+  padding-left: 70px;
   padding-bottom: 32px;
 }
 
@@ -153,36 +113,19 @@
       min-width: 514px;
       padding-left: 40px;
       padding-right: 40px;
-
-      &::after {
-        width: 100vw;
-        top: 85px;
-        left: 0;
-      }
     }
 
     &--comment {
       min-width: 182px;
       padding-left: 40px;
       padding-right: 40px;
-
-      &::after {
-        width: 100vw;
-        top: 85px;
-        left: 0;
-      }
+      padding-top: 0;
     }
 
     &--other-part {
       min-width: 211px;
       padding-left: 40px;
       padding-right: 40px;
-
-      &::after {
-        width: 100vw;
-        top: 85px;
-        left: 0;
-      }
     }
   }
 
@@ -204,7 +147,7 @@
 
   .questionnaire__small-legend {
     padding: 0;
-    margin-left: 60px;
+    margin-left: 68px;
     font-size: 16px;
   }
 
@@ -214,11 +157,6 @@
 
   .questionnaire__line {
     padding-left: 30px;
-
-    &::after {
-      left: 0;
-      top: 87px;
-    }
   }
 }
 
@@ -246,16 +184,8 @@
       padding: 0;
     }
 
-    &--contact-owner::after {
-      top: 93px;
-    }
-
-    &--comment::after {
-      top: 93px;
-    }
-
-    &--other-part::after {
-      top: 93px;
+    &--comment {
+      padding-top: 0;
     }
   }
 
@@ -272,7 +202,7 @@
   }
 
   .questionnaire__small-legend {
-    margin-left: 80px;
+    margin-left: 87px;
   }
 
   .questionnaire__line {

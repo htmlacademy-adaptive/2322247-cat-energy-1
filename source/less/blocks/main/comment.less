@@ -1,5 +1,22 @@
+.comment {
+  margin-top: 22px;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 161px;
+    z-index: -1;
+  }
+}
+
 .comment__input {
-  margin-top: 38px;
+  margin-top: 36px;
   padding-top: 14px;
   padding-left: 15px;
   width: 100%;
@@ -21,21 +38,40 @@
 @media (min-width: @tablet-width) {
   .comment__input {
     min-height: 175px;
-    margin-top: 87px;
+    margin-top: 84px;
     font-size: 20px;
     line-height: 30px;
     vertical-align: top;
-    margin-left: 70px;
+    margin-left: 40px;
     margin-right: 70px;
     width: 628px;
+    padding-top: 11px;
+    padding-left: 20px;
+  }
+
+  .comment {
+    margin-top: 65px;
+
+    &::after {
+      top: 23px;
+      left: -30px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment__input {
-    margin-top: 78px;
+    margin-top: 73px;
     width: 1220px;
-    margin-left: 110px;
+    margin-left: 40px;
     margin-right: 110px;
+  }
+
+  .comment {
+    margin-top: 70px;
+
+    &::after {
+      left: -70px;
+    }
   }
 }

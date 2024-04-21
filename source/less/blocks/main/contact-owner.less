@@ -3,9 +3,31 @@
   margin-top: 35px;
 }
 
+.contact-owner {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    display: block;
+    position: absolute;
+    top: -37px;
+    left: 227px;
+    z-index: -1;
+  }
+}
+
+
 @media (min-width: @tablet-width) {
   .contact-owner {
     padding: 0;
+
+    &::after {
+      top: -14px;
+      left: -30px;
+    }
   }
 
   .contact-owner__list {
@@ -16,5 +38,9 @@
 @media (min-width: @desktop-width) {
   .contact-owner__list {
     display: flex;
+  }
+
+  .contact-owner::after {
+    left: -70px;
   }
 }

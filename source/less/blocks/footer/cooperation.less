@@ -25,13 +25,14 @@
   padding-bottom: 26px;
 }
 
-.cooperation__adress {
+.cooperation__address {
   color: #444444;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
   width: 140px;
+  position: relative;
 }
 
 .cooperation__location {
@@ -63,12 +64,18 @@
     padding: 0;
   }
 
-  .cooperation__adress {
+  .cooperation__address {
     font-size: 16px;
     line-height: 20px;
     max-width: 157px;
     width: auto;
     text-align: right;
+
+    &--town {
+      bottom: 0;
+      position: absolute;
+      right: 0;
+    }
   }
 }
 
@@ -81,16 +88,23 @@
     padding-left: 80px;
   }
 
-  .cooperation__adress {
-    padding-right: 142px;
+  .cooperation__address {
+    padding-right: 78px;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--town {
+      position: relative;
+      padding-top: 20px;
+    }
   }
 
   .cooperation__container {
     position: absolute;
     top: 95px;
     left: 110px;
-    width: 565px;
+    min-width: 565px;
     height: 199px;
     margin: 0;
     padding: 0;
