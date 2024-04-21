@@ -46,6 +46,10 @@
   justify-content: center;
 }
 
+.facts__money--title {
+  margin-right: 4px;
+}
+
 .facts__money p {
   margin-block-start: 10px;
 }
@@ -75,6 +79,10 @@
     margin: 0;
     justify-content: flex-end;
     margin-top: 20px;
+
+    &--number {
+      margin-top: -4px;
+    }
   }
 
   .facts__money p {
@@ -121,10 +129,14 @@
 @media (min-width: @desktop-width) {
   .facts__money {
     padding-left: 0;
-    margin-top: 54px;
+    margin-top: 56px;
     justify-content: space-between;
     margin-bottom: 84px;
     width: 327px;
+
+    &--number {
+      margin: 0;
+    }
   }
 
   .facts__description {
