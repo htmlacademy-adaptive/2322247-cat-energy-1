@@ -2,3 +2,31 @@
   .list-reset();
   margin-top: 34px;
 }
+
+.other-part {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 182px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .other-part::after {
+    left: -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-part::after {
+    left: -70px;
+  }
+}

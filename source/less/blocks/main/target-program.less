@@ -74,7 +74,7 @@
     margin-left: 70px;
     margin-right: 70px;
     padding-top: 17px;
-    padding-bottom: 27px;
+    padding-bottom: 32px;
     padding-left: 27px;
     min-width: 601px;
     border: 1px solid #d9d9d9;
@@ -87,6 +87,7 @@
   .target__mark {
     height: 40px;
     width: 40px;
+    top: 6px;
 
     &::before {
       height: 18px;
@@ -94,6 +95,10 @@
       top: 11px;
       left: 11px;
     }
+  }
+
+  .target__label {
+    align-items: flex-end;
   }
 }
 
@@ -106,5 +111,14 @@
 
   .target-program {
     margin-top: 63px;
+  }
+
+  .target__mark {
+    top: -2px;
+    margin-right: 18px;
+  }
+
+  .target__label {
+    align-items: center;
   }
 }
