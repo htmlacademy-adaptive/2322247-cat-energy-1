@@ -72,6 +72,13 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .additionally__mark--visually-hidden[type="checkbox"]:focus + .additionally__mark::before {
+    background-image: url("../img/checked-tablet.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: @desktop-width) {
