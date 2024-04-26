@@ -31,6 +31,13 @@
   background-position: center;
 }
 
+.additionally__mark--visually-hidden[type="checkbox"]:focus ~ .additionally__text {
+  color: #68b738;
+}
+
+.additionally__mark--visually-hidden[type="checkbox"]:focus-within ~ .additionally__text {
+  color: #68b738;
+}
 
 @media (min-width: @tablet-width) {
   .additionally__text {
@@ -67,13 +74,6 @@
   }
 
   .additionally__mark--visually-hidden[type="checkbox"]:checked + .additionally__mark::before {
-    background-image: url("../img/checked-tablet.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .additionally__mark--visually-hidden[type="checkbox"]:focus + .additionally__mark::before {
     background-image: url("../img/checked-tablet.svg");
     position: absolute;
     background-repeat: no-repeat;
