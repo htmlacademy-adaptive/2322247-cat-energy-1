@@ -19,8 +19,10 @@
   top: 0;
   left: 120px;
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     outline: none;
+    background-image: url("../img/sprite.svg#slider-button-mobile--focus");
   }
 }
 
@@ -38,6 +40,11 @@
     height: 512px;
     left: 260px;
     background-image: url("../img/sprite.svg#slider-button-tablet");
+
+    &:focus,
+    &:focus-visible {
+      background-image: url("../img/sprite.svg#slider-button-tablet--focus");
+    }
   }
 }
 

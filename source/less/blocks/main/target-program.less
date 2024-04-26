@@ -58,9 +58,14 @@
   background-color: #68b738;
 }
 
-.target__mark--visually-hidden[type="radio"]:focus + .target__mark::before {
-  background-color: #68b738;
+.target__mark--visually-hidden[type="radio"]:focus ~ .target__text {
+  color: #68b738;
 }
+
+.target__mark--visually-hidden[type="radio"]:focus-visible ~ .target__text {
+  color: #68b738;
+}
+
 
 @media (min-width: @tablet-width) {
   .target-program {
