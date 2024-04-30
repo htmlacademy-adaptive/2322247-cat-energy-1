@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" crossOrigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" crossOrigin="anonymous">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" crossOrigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
@@ -29,8 +30,8 @@
 <body class="page__body">
   <header class="main-header main-header--index">
     <div class="main-header__container">
-      <div class="main-header__logo-container">
-        <a href="#" class="main-header__logo--focus">
+      <div class="main-header__logo-container logo-container">
+        <a href="#" class="logo-container__focus">
           <picture>
             <source media="(min-width:1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
             <source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="60" height="50">
@@ -80,6 +81,15 @@
             Занялся собой? Займись котом!
           </p>
           <picture>
+            <source type="image/webp" media="(min-width:1440px)"
+              srcset="img/product-general-desktop.webp 1x,img/product-general-desktop@2x.webp 2x" width="552"
+              height="499">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/product-general-tablet.webp 1x, img/product-general-tablet@2x.webp 2x" width="709"
+              height="609">
+            <source type="image/webp" srcset="img/product-general.webp 1x, img/product-general@2x.webp 2x" width="280"
+              height="270">
+
             <source media="(min-width:1440px)"
               srcset="img/product-general-desktop.png 1x,img/product-general-desktop@2x.png 2x" width="552"
               height="499">
@@ -100,8 +110,8 @@
             <picture>
               <source media="(min-width:1440px)" srcset="img/black-cat-desktop.svg" width="100" height="106">
               <source media="(min-width:768px)" srcset="img/black-cat-tablet.svg" width="200" height="211">
-              <img class="catalog-choice__logo--skinny" src="img/black-cat.svg" width="36" height="50"
-                alt="Стройный кот">
+              <img class="catalog-choice__logo catalog-choice__logo--skinny" src="img/black-cat.svg" width="50"
+                height="53" alt="Стройный кот">
             </picture>
             <h3 class="catalog-choice__title catalog-choice__title--skinny">Похудение</h3>
             <p class="catalog-choice__description catalog-choice__description--skinny">Ваш кот весит больше собаки и
@@ -113,8 +123,8 @@
             <picture>
               <source media="(min-width:1440px)" srcset="img/black-tiger-desktop.svg" width="134" height="100">
               <source media="(min-width:768px)" srcset="img/black-tiger-tablet.svg" width="268" height="200">
-              <img class="catalog-choice__logo--fat" src="img/black-tiger.svg" width="68" height="29"
-                alt="Кот с мышцами">
+              <img class="catalog-choice__logo catalog-choice__logo--fat" src="img/black-tiger.svg" width="67"
+                height="50" alt="Кот с мышцами">
             </picture>
             <h3 class="catalog-choice__title catalog-choice__title--fat">Набор массы</h3>
             <p class="catalog-choice__description catalog-choice__description--fat">Заработать авторитет среди дворовых
@@ -131,7 +141,7 @@
           <li class="progress__item progress__item--icon-leaf">
             <picture>
               <source media="(min-width:768px)" srcset="img/icon-leaf-tablet.svg" width="80" height="80">
-              <img class="progress__logo--icon-leaf" src="img/icon-leaf.svg" width="60" height="60"
+              <img class="progress__logo progress__logo--icon-leaf" src="img/icon-leaf.svg" width="60" height="60"
                 alt="Полезные питательные вещества">
             </picture>
             <p class="progress__text progress__text--icon-leaf">Функциональное питание содержит только полезные
@@ -140,7 +150,8 @@
           <li class="progress__item progress__item--icon-tub">
             <picture>
               <source media="(min-width:768px)" srcset="img/icon-tub-tablet.svg" width="80" height="80">
-              <img class="progress__logo--icon-tub" src="img/icon-tub.svg" width="60" height="60" alt="Залить кипятком">
+              <img class="progress__logo progress__logo--icon-tub" src="img/icon-tub.svg" width="60" height="60"
+                alt="Залить кипятком">
             </picture>
             <p class="progress__text progress__text--icon-tub">Выпускается в виде порошка, который нужно лишь залить
               кипятком и готово.</p>
@@ -148,7 +159,7 @@
           <li class="progress__item progress__item--icon-eat">
             <picture>
               <source media="(min-width:768px)" srcset="img/icon-eat-tablet.svg" width="80" height="80">
-              <img class="progress__logo--icon-eat" src="img/icon-eat.svg" width="60" height="60"
+              <img class="progress__logo progress__logo--icon-eat" src="img/icon-eat.svg" width="60" height="60"
                 alt="Замена обычной еды">
             </picture>
             <p class="progress__text progress__text--icon-eat">Замените один-два приема обычной еды на наше
@@ -157,7 +168,8 @@
           <li class="progress__item progress__item--icon-alarm">
             <picture>
               <source media="(min-width:768px)" srcset="img/icon-alarm-tablet.svg" width="80" height="80">
-              <img class="progress__logo--icon-alarm" src="img/icon-alarm.svg" width="60" height="60" alt="Через месяц">
+              <img class="progress__logo progress__logo--icon-alarm" src="img/icon-alarm.svg" width="60" height="60"
+                alt="Через месяц">
             </picture>
             <p class="progress__text progress__text--icon-alarm">Уже через месяц наслаждайтесь изменениями к лучшему
               вашего питомца!</p>
@@ -165,77 +177,82 @@
         </ul>
       </div>
     </section>
-    <section class="example">
-      <div class="example__wrapper container">
-        <div class="example__desc desc">
-          <h2 class="desc__title">Живой пример</h2>
-          <div class="desc__color">
-            <div class="desc__container">
-              <p class="desc__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-                Slim.
-                Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-                16
-                часов в день. </p>
-              <div class="desc__facts facts">
-                <div class="facts__container">
-                  <dl class="facts__list">
-                    <div class="facts__item">
-                      <dt class="facts__number facts__number--weight">5 кг</dt>
-                      <dd class="facts__description facts__description--weight">Снижение веса</dd>
-                    </div>
-                    <div class="facts__item">
-                      <dt class="facts__number facts__number--day">60 дней</dt>
-                      <dd class="facts__description facts__description--day">Затрачено времени</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div class="facts__money">
-                  <p class="facts__money--title">Затраты на питание:</p>
-                  <p class="facts__money--number">15 000 руб.</p>
+    <div class="color-example">
+      <section class="example">
+        <div class="example__wrapper container">
+          <div class="example__desc desc">
+            <h2 class="desc__title">Живой пример</h2>
+            <div class="desc__color">
+              <div class="desc__container">
+                <p class="desc__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+                  Slim.
+                  Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+                  по
+                  16
+                  часов в день. </p>
+                <div class="desc__facts facts">
+                  <div class="facts__container">
+                    <dl class="facts__list">
+                      <div class="facts__item">
+                        <dt class="facts__number facts__number--weight">5 кг</dt>
+                        <dd class="facts__description facts__description--weight">Снижение веса</dd>
+                      </div>
+                      <div class="facts__item">
+                        <dt class="facts__number facts__number--day">60 дней</dt>
+                        <dd class="facts__description facts__description--day">Затрачено времени</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <div class="facts__money money">
+                    <p class="money__title">Затраты на питание:</p>
+                    <p class="money__number">15 000 руб.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="example__slider result-cat">
-        <ul class="result-cat__list slider">
-          <li class="slider__item slider__item--fat">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/fat-cat-slider.webp 1x, img/fat-cat-slider@2x.webp 2x" width="280" height="512">
-              <source type="image/webp"
-                srcset="img/fat-cat-slider-mobile.webp 1x, img/fat-cat-slider-mobile@2x.webp 2x">
-              <source media="(min-width:768px)" srcset="img/fat-cat-slider.png 1x,img/fat-cat-slider@2x.png 2x"
-                width="280" height="512">
-              <img class="slider__photo--fat" src="img/fat-cat-slider-mobile.png"
-                srcset=" img/fat-cat-slider-mobile@2x.png" width="140" height="256" alt="Кот до похудения">
-            </picture>
-          </li>
-          <li class="slider__item slider__item--skinny">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/skinny-cat-slider.webp 1x, img/skinny-cat-slider@2x.webp 2x" width="280" height="512">
-              <source type="image/webp"
-                srcset="img/skinny-cat-slider-mobile.webp 1x, img/skinny-cat-slider-mobile@2x.webp 2x">
-              <source media="(min-width:768px)" srcset="img/skinny-cat-slider.png 1x,img/skinny-cat-slider@2x.png 2x"
-                width="280" height="512">
-              <img class="slider__photo--skinny" src="img/skinny-cat-slider-mobile.png"
-                srcset=" img/skinny-cat-slider-mobile@2x.png" width="140" height="256" alt="Кот после похудения">
-            </picture>
-          </li>
-        </ul>
-        <button class="slider__toggle" type="button" aria-label="Сравнение результата"></button>
-      </div>
-    </section>
+        <div class="example__slider result-cat">
+          <ul class="result-cat__list slider">
+            <li class="slider__item slider__item--fat">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/fat-cat-slider.webp 1x, img/fat-cat-slider@2x.webp 2x" width="280" height="512">
+                <source type="image/webp"
+                  srcset="img/fat-cat-slider-mobile.webp 1x, img/fat-cat-slider-mobile@2x.webp 2x" width="140"
+                  height="256">
+                <source media="(min-width:768px)" srcset="img/fat-cat-slider.png 1x,img/fat-cat-slider@2x.png 2x"
+                  width="280" height="512">
+                <img class="slider__photo slider__photo--fat" src="img/fat-cat-slider-mobile.png"
+                  srcset=" img/fat-cat-slider-mobile@2x.png" width="140" height="256" alt="Кот до похудения">
+              </picture>
+            </li>
+            <li class="slider__item slider__item--skinny">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/skinny-cat-slider.webp 1x, img/skinny-cat-slider@2x.webp 2x" width="280" height="512">
+                <source type="image/webp"
+                  srcset="img/skinny-cat-slider-mobile.webp 1x, img/skinny-cat-slider-mobile@2x.webp 2x" width="140"
+                  height="256">
+                <source media="(min-width:768px)" srcset="img/skinny-cat-slider.png 1x,img/skinny-cat-slider@2x.png 2x"
+                  width="280" height="512">
+                <img class="slider__photo slider__photo--skinny" src="img/skinny-cat-slider-mobile.png"
+                  srcset=" img/skinny-cat-slider-mobile@2x.png" width="140" height="256" alt="Кот после похудения">
+              </picture>
+            </li>
+          </ul>
+          <button class="result-cat__toggle" type="button" aria-label="Сравнение результата"></button>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="main-footer__cooperation cooperation cooperation--index">
       <h2 class="visually-hidden">Месторасположение на карте</h2>
       <div class="cooperation__container">
         <p class="cooperation__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
-        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
-          <span class="cooperation__address--town">Санкт-Петербург</span>
+        <address class="cooperation__address address">ул. Большая Конюшенная, д. 19/8
+          <span class="address__city">Санкт-Петербург</span>
         </address>
       </div>
       <iframe class="cooperation__location"
@@ -264,7 +281,7 @@
           </li>
         </ul>
       </div>
-      <a class="contacts-footer__copyright copyright" href="https://htmlacademy.ru">
+      <a class="contacts-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy</span>
         <div class="copyright__text">HTML Academy</div>
         <div class="copyright__logo"></div>

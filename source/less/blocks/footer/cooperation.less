@@ -41,6 +41,12 @@
   object-fit: cover;
   display: block;
   height: 362px;
+  background-image: url("../img/location.webp");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location@2x.webp");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -55,6 +61,11 @@
   .cooperation__location {
     height: 400px;
     display: block;
+    background-image: url("../img/location-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.webp");
+    }
   }
 
   .cooperation__slogan {
@@ -70,12 +81,6 @@
     max-width: 157px;
     width: auto;
     text-align: right;
-
-    &--town {
-      bottom: 0;
-      position: absolute;
-      right: 0;
-    }
   }
 }
 
@@ -93,11 +98,6 @@
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-
-    &--town {
-      position: relative;
-      padding-top: 20px;
-    }
   }
 
   .cooperation__container {
@@ -110,5 +110,13 @@
     padding: 0;
     background-color: #ffffff;
     align-items: center;
+  }
+
+  .cooperation__location {
+    background-image: url("../img/location-desktop.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.webp");
+    }
   }
 }

@@ -2,7 +2,6 @@
   .list-reset();
   background-color: #f2f2f2;
   position: relative;
-  z-index: -2;
 }
 
 
@@ -17,19 +16,6 @@
   position: relative;
   margin-bottom: 30px;
   margin-top: 20px;
-
-  &::after {
-    content: "";
-    height: 50px;
-    width: 50px;
-    background-color: #68b738;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    left: 20px;
-    top: 24px;
-    z-index: -1;
-  }
 }
 
 
@@ -75,12 +61,12 @@
 .catalog-choice__logo--skinny {
   position: absolute;
   top: 21px;
-  left: 26px;
+  left: 20px;
 }
 
 .catalog-choice__logo--fat {
   position: absolute;
-  top: 35px;
+  top: 24px;
   left: 12px;
 }
 
@@ -105,10 +91,6 @@
     margin: 0;
     padding-bottom: 0;
     background-image: none;
-
-    &::after {
-      display: none;
-    }
 
     &--fat {
       padding-top: 77px;
@@ -144,7 +126,6 @@
 
     &--fat {
       padding-bottom: 56px;
-      margin-top: 27px;
     }
   }
 }
@@ -169,7 +150,6 @@
     padding: 0;
     padding-left: 52px;
     padding-top: 73px;
-    font-size: 14px;
 
     &--skinny {
       padding-right: 61px;

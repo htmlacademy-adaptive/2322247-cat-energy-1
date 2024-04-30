@@ -3,6 +3,10 @@
 }
 
 .main-nav__toggle {
+  display: none;
+}
+
+.js .main-nav__toggle {
   border: none;
   display: block;
   height: 24px;
@@ -23,6 +27,7 @@
   }
 }
 
+
 .main-nav--closed .main-nav__toggle {
   background-image: url("../img/header-menu.svg");
   background-repeat: no-repeat;
@@ -36,9 +41,7 @@
 }
 
 .main-nav--opened .main-nav__wrapper {
-  position: absolute;
   width: 100%;
-  z-index: 2;
 }
 
 .main-nav--closed .main-nav__wrapper {

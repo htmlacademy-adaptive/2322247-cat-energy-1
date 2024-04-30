@@ -1,6 +1,7 @@
 .example {
   background-color: #eaeaea;
   width: 100%;
+  z-index: 3;
 }
 
 .example__wrapper {
@@ -21,28 +22,6 @@
     background-color: transparent;
     border-top: 1px solid #e6e6e6;
     position: relative;
-
-    &::after {
-      content: "";
-      min-height: 462px;
-      width: 100vw;
-      background-color: #f2f2f2;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-    }
-
-    &::before {
-      content: "";
-      min-height: 462px;
-      width: 100vw;
-      background-color: #f2f2f2;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-    }
   }
 }
 

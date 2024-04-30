@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" crossOrigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" crossOrigin="anonymous">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" crossOrigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
@@ -29,15 +30,15 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container">
-      <div class="main-header__logo-container">
-        <a href="#" class="main-header__logo--focus">
+      <div class="main-header__logo-container logo-container">
+        <a href="index.html" class="logo-container__focus">
           <picture>
             <source media="(min-width:1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
             <source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="60" height="50">
             <img class="main-header__logo" src="img/logo.svg" width="33" height="38" alt="Cat energy">
           </picture>
         </a>
-        <a href="#" tabindex="-1">
+        <a href="index.html" tabindex="-1">
           <picture>
             <source media="(min-width:1440px)" srcset="img/logo-text-desktop.svg">
             <source media="(min-width:768px)" srcset="img/logo-text-tablet.svg">
@@ -100,7 +101,7 @@
           <ul class="target-program__list target">
             <li class="target__item">
               <label class="target__label">
-                <input class="target__mark--visually-hidden visually-hidden" type="radio" name="need_help"
+                <input class="target__visually-hidden visually-hidden" type="radio" name="need_help"
                   value="slim" checked>
                 <span class="target__mark"></span>
                 <span class="target__text">Похудение</span>
@@ -108,7 +109,7 @@
             </li>
             <li class="target__item">
               <label class="target__label">
-                <input class="target__mark--visually-hidden visually-hidden" type="radio" name="need_help"
+                <input class="target__visually-hidden visually-hidden" type="radio" name="need_help"
                   value="mass">
                 <span class="target__mark"></span>
                 <span class="target__text">Набор массы</span>
@@ -116,7 +117,7 @@
             </li>
             <li class="target__item">
               <label class="target__label">
-                <input class="target__mark--visually-hidden visually-hidden" type="radio" name="need_help"
+                <input class="target__visually-hidden visually-hidden" type="radio" name="need_help"
                   value="i don't know">
                 <span class="target__mark"></span>
                 <span class="target__text">Не знаю (нужен ваш совет)</span>
@@ -155,28 +156,28 @@
           <ul class="other-part__list additionally">
             <li class="additionally__item">
               <label class="additionally__label">
-                <input class="additionally__mark--visually-hidden visually-hidden" type="checkbox" name="sugar" checked>
+                <input class="additionally__visually-hidden visually-hidden" type="checkbox" name="sugar" checked>
                 <span class="additionally__mark"></span>
                 <span class="additionally__text">Сахарозаменитель</span>
               </label>
             </li>
             <li class="additionally__item">
               <label class="additionally__label">
-                <input class="additionally__mark--visually-hidden visually-hidden" type="checkbox" name="water">
+                <input class="additionally__visually-hidden visually-hidden" type="checkbox" name="water">
                 <span class="additionally__mark"></span>
                 <span class="additionally__text">Питьевая вода</span>
               </label>
             </li>
             <li class="additionally__item">
               <label class="additionally__label">
-                <input class="additionally__mark--visually-hidden visually-hidden" type="checkbox" name="milk">
+                <input class="additionally__visually-hidden visually-hidden" type="checkbox" name="milk">
                 <span class="additionally__mark"></span>
                 <span class="additionally__text">Молоко</span>
               </label>
             </li>
             <li class="additionally__item">
               <label class="additionally__label">
-                <input class="additionally__mark--visually-hidden visually-hidden" type="checkbox" name="vitamins">
+                <input class="additionally__visually-hidden visually-hidden" type="checkbox" name="vitamins">
                 <span class="additionally__mark"></span>
                 <span class="additionally__text">Витамины</span>
               </label>
@@ -197,8 +198,8 @@
       <h2 class="visually-hidden">Месторасположение на карте</h2>
       <div class="cooperation__container cooperation__container--form">
         <p class="cooperation__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
-        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
-          <span class="cooperation__address--town">Санкт-Петербург</span>
+        <address class="cooperation__address address">ул. Большая Конюшенная, д. 19/8
+          <span class="address__city">Санкт-Петербург</span>
         </address>
       </div>
       <iframe class="cooperation__location"
@@ -209,7 +210,7 @@
     </section>
     <section class="main-footer__contacts contacts-footer">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <a class="contacts-footer__logo" href="#">
+      <a class="contacts-footer__logo" href="index.html">
         <img src="./img/logo-footer.svg" width="128" height="24" alt="Cat energy">
       </a>
       <div class="contacts-footer__social social">
@@ -227,7 +228,7 @@
           </li>
         </ul>
       </div>
-      <a class="contacts-footer__copyright copyright" href="https://htmlacademy.ru">
+      <a class="contacts-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy</span>
         <div class="copyright__text">HTML Academy</div>
         <div class="copyright__logo"></div>
