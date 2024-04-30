@@ -1,0 +1,31 @@
+@media (min-width: @tablet-width) {
+  .color-example {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: #f2f2f2;
+      position: absolute;
+      bottom: 0;
+      height: 462px;
+      z-index: 2;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .color-example {
+    background-color: #f2f2f2;
+    position: relative;
+
+    &::after {
+      background-color: #ffffff;
+      top: 0;
+      bottom: auto;
+      height: 135px;
+    }
+  }
+}

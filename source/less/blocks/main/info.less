@@ -14,23 +14,19 @@
   }
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+.info__input::-webkit-inner-spin-button,
+.info__input::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
 
 /* Для Firefox */
-input[type="number"]::-moz-focus-inner {
+.info__input::-moz-focus-inner {
   border: 0;
 }
 
-input[type="number"] {
-  appearance: textfield;
-}
-
 /* Для Internet Explorer */
-input[type="number"]::-ms-clear {
+.info__input::-ms-clear {
   display: none;
 }
 
@@ -42,13 +38,11 @@ input[type="number"]::-ms-clear {
   width: 100%;
   font-size: 16px;
   line-height: 18px;
-
-  &::placeholder {
-    text-transform: uppercase;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    color: #444444;
-  }
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  appearance: textfield;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -59,6 +53,10 @@ input[type="number"]::-ms-clear {
     outline: 2px solid #444444;
     position: relative;
   }
+}
+
+.info__invalid {
+  border: 2px solid #ff8282;
 }
 
 .info__label {

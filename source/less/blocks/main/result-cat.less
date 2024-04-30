@@ -9,10 +9,41 @@
   margin-top: 6px;
 }
 
+.result-cat__toggle {
+  width: 40px;
+  height: 256px;
+  border: none;
+  background-image: url("../img/sprite.svg#slider-button-mobile");
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    background-image: url("../img/sprite.svg#slider-button-mobile--focus");
+  }
+}
+
 @media (min-width: @tablet-width) {
   .result-cat {
     max-width: 560px;
     margin-top: 88px;
+  }
+
+  .result-cat__toggle {
+    height: 512px;
+    left: 260px;
+    background-image: url("../img/sprite.svg#slider-button-tablet");
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      background-image: url("../img/sprite.svg#slider-button-tablet--focus");
+    }
   }
 }
 

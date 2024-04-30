@@ -24,19 +24,24 @@
   }
 }
 
-.additionally__mark--visually-hidden[type="checkbox"]:checked + .additionally__mark::before {
+.additionally__visually-hidden:checked + .additionally__mark::before {
   background-image: url("../img/checked.svg");
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.additionally__mark--visually-hidden[type="checkbox"]:focus ~ .additionally__text {
+.additionally__visually-hidden:focus ~ .additionally__text {
   color: #68b738;
 }
 
-.additionally__mark--visually-hidden[type="checkbox"]:focus-within ~ .additionally__text {
+.additionally__visually-hidden:focus-within ~ .additionally__text {
   color: #68b738;
+}
+
+.additionally__visually-hidden:disabled + .additionally__mark,
+.additionally__visually-hidden:disabled ~ .additionally__text {
+ opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -73,7 +78,7 @@
     }
   }
 
-  .additionally__mark--visually-hidden[type="checkbox"]:checked + .additionally__mark::before {
+  .additionally__visually-hidden:checked + .additionally__mark::before {
     background-image: url("../img/checked-tablet.svg");
     position: absolute;
     background-repeat: no-repeat;
@@ -89,6 +94,7 @@
 
   .additionally__item {
     margin: 0;
+    margin-bottom: 10px;
   }
 
   .additionally__item:nth-child(odd) {

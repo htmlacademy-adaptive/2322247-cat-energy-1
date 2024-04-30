@@ -59,21 +59,23 @@
 @media (min-width: @tablet-width) {
   .show-all {
     background-image: url("../img/sprite.svg#plus-catalog-tablet");
-    background-position: 131px 129px;
-    margin-left: 30px;
+    background-position: 131px 117px;
     position: relative;
     padding: 0;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
   }
 
   .show-all::after {
     content: "";
-    width: 320px;
-    height: 425px;
+    width: 324px;
+    height: 68px;
+    background-color: #ffffff;
     position: absolute;
-    bottom: 0;
-    z-index: -1;
-    border: 2px solid #f2f2f2;
-    left: 0;
+    top: -2px;
+    z-index: 1;
+    border:2px solid #ffffff;
+    border-bottom: 2px solid #f2f2f2;
   }
 
   .show-all__title {
@@ -81,7 +83,7 @@
     line-height: 24px;
     width: 170px;
     text-align: center;
-    padding-top: 205px;
+    padding-top: 195px;
     padding-bottom: 24px;
     margin: 0 auto;
   }
@@ -106,7 +108,7 @@
   }
 
   .show-all__conteiner {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 }
 
@@ -116,7 +118,8 @@
   }
 
   .show-all::after {
-    width: 242px;
+    width: 247px;
+    height: 80px;
   }
 
   .show-all {
